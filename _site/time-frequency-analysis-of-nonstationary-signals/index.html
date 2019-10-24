@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Time-Frequency Analysis of Non-Stationary Signals &#8211; David Ohm, PhD </title>
+<meta name="description" content="">
+<meta name="keywords" content="signal processing, DSP, FFT, signal analysis, machine learning, Fourier Transform">
+
+
+
+<head>
+
+<!-- Twitter Cards -->
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Time-Frequency Analysis of Non-Stationary Signals &#8211; David Ohm, PhD ">
+<meta property="og:description" content="Check out the Matlab demo code to explore time-frequency analysis using a Bat signal…not the super-hero one ;)Often, ...">
+<meta property="og:url" content="http://localhost:4000/time-frequency-analysis-of-nonstationary-signals/">
+<meta property="og:site_name" content="David Ohm, PhD ">
+<meta property="og:image" content="http://localhost:4000/images/bat_tf.png">
+
+<!-- Google authorship -->
+<a rel="author" href="https://www.google.com/+JaanAltosaar"></a>
+
+<!-- Google & Bing Verification -->
+
+
+</head>
+<link rel="canonical" href="http://localhost:4000/time-frequency-analysis-of-nonstationary-signals/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Subscribe to the David Ohm, PhD Feed">
+
+
+
+<!-- old feed: <link href="http://localhost:4000/feed.xml" target="_blank" type="application/atom+xml" rel="alternate" title="Subscribe to the David Ohm, PhD RSS Feed"> -->
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/entypo.css" media="all"> -->
+<!-- <script async src="https://use.fontawesome.com/0a87e83674.js"></script> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='http://localhost:4000/assets/cal.css' media='all' />
+-->
+
+<!-- Fresh Squeezed jQuery -->
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+<!-- for copying bibtex to clipboard -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+
+<script async src="http://localhost:4000/assets/js/auto-render.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<script async src="http://localhost:4000/assets/js/main.js"></script>
+
+<!-- Load Modernizr -->
+<script async src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/i.css">
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header darken">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/"><span id="jaan" class="unhilighted">David Ohm, PhD</span>&nbsp;<span id="altosaar" class="hilighted"></span></a></h1>
+        </hgroup>
+        <!-- <a href="#nav" class="menu"><span class='icons'>☰</span></a> -->
+        <a class="nav menu" href="#"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <!--<li>
+              <a href="/" title="David Ohm, PhD">Home</a>
+            </li>-->
+            <ul>
+            
+            
+                
+                
+                <li><a href="http://localhost:4000/about" >About</a></li>
+            
+                
+                
+                <li><a href="http://localhost:4000/blog" >Blog</a></li>
+            
+                
+                
+                <li><a href="http://localhost:4000/projects" >Projects</a></li>
+            
+                
+                
+                <li><a href="http://localhost:4000/papers" >Papers</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+  <div class="overlay overlay-lighter"></div>
+  <div class="featured-image" style="background-image: url(http://localhost:4000/images/bat_tf.png)"></div>
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1><a href="/time-frequency-analysis-of-nonstationary-signals/">Time-Frequency Analysis of Non-Stationary Signals</a></h1>
+            <br>
+            <!-- <p class="date">Published on <span class="date">Jan 22, 2017</span>&nbsp;|&nbsp;By <span itemprop="name" class="fn"><a href="http://localhost:4000/about" title="About " itemprop="url"></a></span> | <a href="/time-frequency-analysis-of-nonstationary-signals/">Permalink</a></p> -->
+
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+
+        <p>Check out the <a href="https://github.com/ohmdsp/TF-Bat-Signal-Analysis">Matlab demo code</a> to explore time-frequency analysis using a Bat signal…not the super-hero one ;)
+<br />
+Often, the examples provided in our signal processing textbooks assume that the signal we are working with is wide-sense-stationary. This means that the first and second order statistics (mean and correlation) do not change with shifts in time. Akthough, all of our statistical signal processing techniques depend upon this statistical behavior in order to produce meaningful characterizations when analyzing a random signal, many real-world signals don’t have nonstationary characteristics. A bat echo-location signal is just one example. 
+<br /><br />
+How can we use statistical signal processing techniques to analyze time-changing statistical behavior? We must first determine what is the longest time interval <script type="math/tex">N</script> over which we can assume that the data is approximately stationary, and then step through the random signal (with or without data overlap) using small analysis intervals never exceeding N. This is done to accurately capture the quasi-stationary statistical characteristics for each analysis interval. The changing statistical behavior may then be tracked by creating a stacked plot of the statistics estimated each analysis interval. This plot is called a time-vs-frequency spectrogram (Note: other types of time-vs-feature grams are also possible, but not discussed here).</p>
+
+<h3 id="frequency-domain-analysis">Frequency-Domain Analysis</h3>
+<p>If the autocorrelation sequence (ACS) for a signal is stationary, then the Fourier transform of the ACS (the power spectral density, or PSD) is also stationary. A way to visualize this is to look at the shape of the plotted PSD or the ACS. If the signal is stationary, these plotted shapes should not change over time. If time varying content is observed, then the random signal has nonstationary statistical behavior. We could experimentally vary the analysis interval duration <script type="math/tex">N</script> until differences in successive PSD estimates are observed, indicating the threshold between quasi-stationary and nonstationary statistical behavior. 
+<br /><br />
+Using bat echo-location data, an experimental determination was made that <script type="math/tex">N = 38</script> samples was the threshold between quasi-stationary and stationary statistical behavior. The time-vs-frequency gram created by using a sample spectrum (magnitude of FFT) for each analysis intervals of 38 samples, with 37 sample overlap (i.e., only one sample shift), is shown in the figure below. Notice the four separate signal components being generated simultaneously by the bat during echo-location.</p>
+
+<figure>
+	<img src="/images/bat_TFR.png" />
+	<figcaption>TF analysis of a bat echo-location signal.</figcaption>
+</figure>
+
+<p>The bat data has an approximately linear time-vs-frequency trajectory in the TF analysis gram that makes it possible to calulate an approximation for the longest time interval in which the bat signal can be considered to be quasi-stationary. The Fourier transform of a windowed data segment of duration <script type="math/tex">NT</script> seconds (where <script type="math/tex">N</script> is the number of data points and <script type="math/tex">T</script> is the sampling interval) produces a frequency domain spectrum mainlobe response which is roughly <script type="math/tex">1/NT</script> Hz in 3dB bandwidth. Therfore, a criterion for having a roughly stationary statistical behavior is that any change in frequency content be less than <script type="math/tex">1/NT</script> Hz over an analysis interval, as this is not resolvable. If this can be made true, the signal is considered to be quasi-stationary over the analysis interval of <script type="math/tex">N</script> samples. From examining the bat spectrogram, we can see there is an approximately linear change of frequency vs time from 50 KHz at 0.65ms to 32 KHz at 1.8 ms. The slope in this region is <script type="math/tex">s=(50-32)/(1.8-0.65)=15.65</script> KHz/ms. Thus, if <script type="math/tex">NT</script> is expressed in ms, the change in frequency is <script type="math/tex">sNT</script> KHz. We want this to be less than the mainlobe response bandwidth. So, the threshold between quasi-stationary and nonstationary conditions is approximately <script type="math/tex">sNT = 1/NT</script>. Since the bat data was sampled at <script type="math/tex">T = 7</script> microseconds, solving for <script type="math/tex">N^2=1/sT^2</script> yields <script type="math/tex">N = 36.1</script> samples, which compares well with our experimentally determined value of <script type="math/tex">N=38</script>.</p>
+
+<p>Try some of these parameter changes to explore what happens:</p>
+<ul>
+  <li>Change the FTT size (example - 64 samples, or 2048 samples)</li>
+  <li>Change the analysis interval duration (example - 8 samples or 256 samples)</li>
+  <li>Change the overlap sample size (example -  make same as analysis inteval duration, try <script type="math/tex">1/2</script> that size)</li>
+  <li>Make notes on what changes while you experiment
+<br />
+    <h3 id="resources">Resources</h3>
+  </li>
+  <li>Don’t forget to download the code and bat signal data so you can try for yourself - <a href="https://github.com/ohmdsp/TF-Bat-Signal-Analysis">Code &amp; Bat Data</a></li>
+</ul>
+
+<p><em>Thanks to Dr. Larry Marple Jr. for the introduction to time-frequency analytics back when I was in graduate school. You should check out his book on <a href="https://www.amazon.com/Digital-Spectral-Analysis-Electrical-Engineering/dp/048678052X">Spectral Analysis</a></em></p>
+
+
+      <!--<div class="sharet"><a class="share" href="https://twitter.com/intent/tweet?text=https://jaan.io/time-frequency-analysis-of-nonstationary-signals/+%40thejaan" target ="_blank" data-dnt="true"><i class="icon-twitter"></i></a>&nbsp;&nbsp;&nbsp;<a class="share" href="https://www.facebook.com/sharer/sharer.php?u=https://jaan.io/time-frequency-analysis-of-nonstationary-signals/" target="_blank"><i class="icon-facebook"></i></a>&nbsp;&nbsp;&nbsp;</div>-->
+
+      <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+
+      
+
+      </article>
+    </section>
+</div>
+<script>
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; i++) {
+      /* TODO: keep going after an individual parse error. */
+      var script = scripts[i];
+      if (script.type.match(/^math\/tex/)) {
+        var text = script.text === "" ? script.innerHTML : script.text;
+        var options = script.type.match(/mode\s*=\s*display/) ?
+                      {displayMode: true} : {};
+        script.insertAdjacentHTML("beforebegin",
+                                  katex.renderToString(text, options));
+      }
+    }
+    document.body.className += " math_finished";
+</script>
+
+<div class="push"></div>
+  <footert>
+  <footer>
+    <!--<aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title"><a href="/">Recent Articles</a></p>
+        
+            <li>
+              <span class="recent-title"><a href="http://localhost:4000/Ongoing-Reading-List/" title="My Reading Recommendations">My Reading Recommendations</span>
+              <span class="date">Sep 21, 2019</a></span>
+            </li>
+        
+            <li>
+              <span class="recent-title"><a href="http://localhost:4000/Random-Variables/" title="Learning - Random Variables">Learning - Random Variables</span>
+              <span class="date">Aug 13, 2019</a></span>
+            </li>
+        
+            <li>
+              <span class="recent-title"><a href="http://localhost:4000/making-time-for-music/" title="Making Time For Music">Making Time For Music</span>
+              <span class="date">Sep 24, 2018</a></span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a href="http://localhost:4000/about"><span class="foot-link">About</span></a></li>
+
+            <li><a href="http://localhost:4000/articles"><span class="foot-link">Articles</span></a></li>
+
+            <li><a id="mail" href="https://jaan.io/feed.xml"><span class="foot-link">Subscribe</span></a></li>
+
+
+
+            
+
+
+            
+        </ul>
+    </div>
+    </aside>-->
+    <!-- <small>&copy; 2019 <a href="mailto:jaan@jaan.io">  </a></small> -->
+    <small><a href="http://localhost:4000/blog">back to blog </a><a </small>
+  </footer>
+</footert>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="http://localhost:4000/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script async src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+  
+
+  </body>
+</html>
+

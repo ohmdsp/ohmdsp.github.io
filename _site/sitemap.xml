@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost:4000</loc>
+    </url>
+
+    
+    <url>
+        <loc>http://localhost:4000/Ongoing-Reading-List/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/Random-Variables/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/making-time-for-music/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/rf-machine-learning/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/time-frequency-analysis-of-nonstationary-signals/</loc>
+    </url>
+    
+</urlset>

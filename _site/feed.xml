@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">David Ohm, PhD</title>
+<subtitle type="text"></subtitle>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2019-10-24T16:10:23-04:00</updated>
+<id>http://localhost:4000/</id>
+<author>
+  <name></name>
+  <uri>http://localhost:4000/</uri>
+  <email></email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[My Reading Recommendations]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/Ongoing-Reading-List/" />
+  <id>http://localhost:4000/Ongoing-Reading-List</id>
+  <published>2019-09-21T00:00:00-04:00</published>
+  <updated>2019-09-21T00:00:00-04:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;With so many books, blogs, and articles to choose from, it can be helpful to get recommendations from others about what to read. This is my list of suggestions based on the books, blogs and articles that I have read that I feel are most enlightening and enjoyable. Note, that I will keep updating this list as I discover more treasures.
+&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;Non-Fiction&lt;/strong&gt;:
+&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Seven Brief Lessons on Physics&lt;/strong&gt;, by Carlo Rovelli&lt;br /&gt;
+ This is a well-written book that is enjoyable to read and educational.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reality Is Not What It Seems: The Journey to Quantum Gravity&lt;/strong&gt;, by Carlo Rovelli&lt;br /&gt;
+ I really enjoyed the background material presented in this book. It felt like a fresh approach to teaching, and the historical connections were enlightening. The later sections on quantum loop gravity were interesting, but less informative than the rest of the book.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Signal And The Noise&lt;/strong&gt;, by Nate Silver&lt;br /&gt;
+ This book is packed with information and stories related to statistical analysis of world events, weather patterns, natural disasters, markets, etc. I found it to be a little too wordy throughout and had to skim some sections in order to stay interested. However, it is worth reading if you want to hear about statistical prediction applied to many different modern history events. If you want to learn about the actual math behind statistical prediction, you will need to get a different book.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Theoretical Minimum&lt;/strong&gt;, by Leonard Susskind&lt;br /&gt;
+ bla bla bla&lt;/li&gt;
+  &lt;li&gt;TBD
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Ongoing-Reading-List/&quot;&gt;My Reading Recommendations&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 21, 2019.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Learning - Random Variables]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/Random-Variables/" />
+  <id>http://localhost:4000/Random-Variables</id>
+  <published>2019-08-13T00:00:00-04:00</published>
+  <updated>2019-08-13T00:00:00-04:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Often, when the concept of a random variable is first introduced, it is tempting to make comparisons to the variables we learn about in high school algebra. However, this can be a mistake that create confusion for years to come. You see, a random variabls is not a variable at all in the traditional sense. It is a function.&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Random-Variables/&quot;&gt;Learning - Random Variables&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on August 13, 2019.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Making Time For Music]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/making-time-for-music/" />
+  <id>http://localhost:4000/making-time-for-music</id>
+  <published>2018-09-24T00:00:00-04:00</published>
+  <updated>2018-09-24T00:00:00-04:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;If you are like me, you love to play at least one musicical instrument. It could be the guitar, the piano, the violin, or some other wonderful noise making device. Maybe you have always enjoyed playing, or maybe you are returning to your instrument after years of absence due to the demands of a career, raising children, or just keeping up with life! If you are thinking of starting an instrument for the first time, congratulations! It is a wonderful journey. 
+&lt;br /&gt;&lt;br /&gt;
+It does not matter how old, or young, you are. If you have been bitten by the music bug, you also understand that the journey to become a better musician takes time. One of the first things you’re taught at lessons is that regular practice is required. Sounds easy enough, but balancing all the distractions responsibilities, and temptations in life can make regular practice challenging to implement with any long lasting commitment.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/orchestra.jpg&quot; /&gt;
+	&lt;figcaption&gt;Learning a musical instrument is rewarding, but takes patience and dedication.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For adults, it can be extra challenging to setup a regular time to play music. Often, there will be influences or people around you that consider practicing to be a low priority, or purely an indulgence. You might ask yourself, “why is it that kids are expected, and often required, to practice every day, but when an adult wants to develop a musical talent it ranks lower in priority than participating in a fantasy football league or washing the car on Saturday’s?” Just google for images using the phrase “practicing a musical instrument” and compare how many images are returned with kids practicing versus adults practicing. Culturally, we admire those that are masters of their craft, but we stereotype practicing as something only done during our youth. No wonder kids often dislike practicing a musical instrument and can’t wait until their parents let them quit. It’s difficult to place value on something they never see their parents doing!
+&lt;br /&gt;&lt;br /&gt;
+Even when blessed with extra talent, there is only one way for us mere mortals to get good at something like playing an instrument. Consistent effort repeated over a long period of time. Finding good teachers and instruction is also key. The goal of this article is not to tell you how to practice, or how often to practice. However, I do hope to give you some inspiration and an awareness that it is ok to make it a priority.
+&lt;br /&gt;&lt;br /&gt;
+It can be energizing to connect with a wider community of like-minded musicians. Similar to sports or other activities, music is more fun when shared with other people. Connecting with other musicians is important and will give you ideas and motivation you cannot find alone. You do not need to be a professional musician in order to communicate the language of music with others. In addition, engaging in music is not just about putting your hands on an instrument. It also involves learning about other musicians, playing styles, resources and technology. Sometimes, it will help to hear something new, learn about a new band, or hear the perspective of another person.
+For inpiration, let me share a few music related discoveries from around the internet - &lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;http://forums.musicplayer.com&quot;&gt;MusicPlayer Forums&lt;/a&gt; is a good resource for connecting with other musicians around the world. The keyboard forum is especially active and you will discover some world-class musicians and session players participating in the conversations. There is a wealth of information available, so read and then ask questions.&lt;br /&gt;
+The &lt;a href=&quot;https://www.thegearpage.net/board/index.php&quot;&gt;Gear Page&lt;/a&gt; is one of my favorite guitar related forums. There are reviews and information on just about anything you want to know about in the guitar world. It can also be a great resource for meeting other musicians and gear enthusiasts. If you are shopping for used gear, make sure you browse the buy-and-sell section.
+Make sure you wander outside the forums and learn about intereting musicians. They will often teach you from their experiences. For example, Reese Wynans is a legendary keyboard player that has played on many famous recordings and with bands such as Stevie Ray Vaughan’s Double Trouble. He is currently playing with Joe Bonamassa’s band and I highly recommend the concert DVD/Bluray Joe Bonamassa: Muddy Wolf at Red Rocks. Guitar players often get the limelight, but Reese is both an amazing player and an amazing person. Check out this and other podcasts by &lt;a href=&quot;https://soundcloud.com/makers-and-shakers&quot;&gt;Music Makers and Soul Shakers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Booker T. Jones is best known for his band Booker T and The MG’s. He was 17 years old when he recorded “Green Onions.” If you have not taken the time to learn to play Green Onions, I highly recommend it. Not only is it a fun song to play solo, it is a great song to jam with a band. This NPR Tiny Desk concert is amazing for its simplicity and for providing a pure look at the playing style of Booker T.&lt;/p&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/rh9KDzNkpSI&quot; width=&quot;700&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are interested in learning to play the guitar, then I can think of no better internet resource for getting you started than &lt;a href=&quot;http://justinguitar.com&quot;&gt;Justin Guitar&lt;/a&gt;. Justin Sandercoe is an Australian guitarist that has been offering free lessons online since 2003. His site is full of amazing resources, and he is genuinely a super nice guy. I have purchased some of the DVD’s and song books from his site to complement all the amazing material he provides for free. I’m a keyboard player, but started learning the guitar about five years ago. Thankfully, justinguitar.com was one of my first experiences.
+&lt;br /&gt;&lt;br /&gt;
+How about learning to play jazz? I recently started a journey into jazz by combining lessons from my regular piano teacher with lessons from &lt;a href=&quot;https://www.openstudionetwork.com/project/peter-martin/&quot;&gt;Peter Martin on the Open Studio platform&lt;/a&gt;. These on-demand lessons are fantastic and challenging. Having affordable access to world-renouned musicians for private lessons is a real luxury the internet provides. Take advantage of it!
+&lt;br /&gt;&lt;br /&gt;
+Speaking of world-class musicians giving lessons. Check out &lt;a href=&quot;https://artistworks.com&quot;&gt;Artist Works&lt;/a&gt; and sign up for some flatpick guitar lessons with &lt;a href=&quot;https://www.bryansutton.com&quot;&gt;Bryan Sutton&lt;/a&gt;! These lessons are amazing resources and you will get personalized feedback directly from the instructor. Don’t miss all the other instrument lessons available on this site. Artist Works has regular sales on lessons so sign up for notifications if you want to study from multiple instructors.
+&lt;br /&gt;&lt;br /&gt;
+How many of you are composers? Growing up, I wanted to be a film composer. I loved the movies with scores from Jerry Goldsmith, John Williams, Ennio Morricone, James Newton Howard, Alan Silvestri, and so many more. I would drool at the magazine images of their studios - packed with synthesizers and gear. Nowdays, the equipment needed to compose for film, TV and games is more accessible. Most composers utilize sample libraries for mocking up scores or even delivering final music. One of my favorite sample library companies is &lt;a href=&quot;https://www.spitfireaudio.com&quot;&gt;Sptitfire Audio&lt;/a&gt; in the UK. The co-founder, &lt;a href=&quot;https://www.youtube.com/channel/UCXCXxhRVYvBOX45_gxr0iHA&quot;&gt;Christian Henson has a YouTube channel&lt;/a&gt; packed full of resources and advice for composers. Aside from being a very talented composer, Christian is a gifted teacher and a direct and honest person. You can find a mountain of inspiration from the long list of videos available on his channel.
+&lt;br /&gt;&lt;br /&gt;
+You may find that there is not enough time in the day to take advantage of all the resources available for learning to play music. For now, just pick something interesting and set aside some protected time for regular practice and learning. Find some other musicians that share your interest and priorities. You may need to look outside your existing social circle and make some new contacts. It will be fun! In a future post, I will dive deeper into some hot topics like Artificial Intelligence (AI) for composing. Until then…enjoy the music!&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/making-time-for-music/&quot;&gt;Making Time For Music&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 24, 2018.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Deep Learning with Radio Frequency Signals?]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/rf-machine-learning/" />
+  <id>http://localhost:4000/rf-machine-learning</id>
+  <published>2017-07-18T00:00:00-04:00</published>
+  <updated>2017-07-18T00:00:00-04:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Coming soon…&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/rf-machine-learning/&quot;&gt;Deep Learning with Radio Frequency Signals?&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on July 18, 2017.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Time-Frequency Analysis of Non-Stationary Signals]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/time-frequency-analysis-of-nonstationary-signals/" />
+  <id>http://localhost:4000/time-frequency-analysis-of-nonstationary-signals</id>
+  <published>2017-01-22T00:00:00-05:00</published>
+  <updated>2017-01-22T00:00:00-05:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Check out the &lt;a href=&quot;https://github.com/ohmdsp/TF-Bat-Signal-Analysis&quot;&gt;Matlab demo code&lt;/a&gt; to explore time-frequency analysis using a Bat signal…not the super-hero one ;)
+&lt;br /&gt;
+Often, the examples provided in our signal processing textbooks assume that the signal we are working with is wide-sense-stationary. This means that the first and second order statistics (mean and correlation) do not change with shifts in time. Akthough, all of our statistical signal processing techniques depend upon this statistical behavior in order to produce meaningful characterizations when analyzing a random signal, many real-world signals don’t have nonstationary characteristics. A bat echo-location signal is just one example. 
+&lt;br /&gt;&lt;br /&gt;
+How can we use statistical signal processing techniques to analyze time-changing statistical behavior? We must first determine what is the longest time interval &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; over which we can assume that the data is approximately stationary, and then step through the random signal (with or without data overlap) using small analysis intervals never exceeding N. This is done to accurately capture the quasi-stationary statistical characteristics for each analysis interval. The changing statistical behavior may then be tracked by creating a stacked plot of the statistics estimated each analysis interval. This plot is called a time-vs-frequency spectrogram (Note: other types of time-vs-feature grams are also possible, but not discussed here).&lt;/p&gt;
+
+&lt;h3 id=&quot;frequency-domain-analysis&quot;&gt;Frequency-Domain Analysis&lt;/h3&gt;
+&lt;p&gt;If the autocorrelation sequence (ACS) for a signal is stationary, then the Fourier transform of the ACS (the power spectral density, or PSD) is also stationary. A way to visualize this is to look at the shape of the plotted PSD or the ACS. If the signal is stationary, these plotted shapes should not change over time. If time varying content is observed, then the random signal has nonstationary statistical behavior. We could experimentally vary the analysis interval duration &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; until differences in successive PSD estimates are observed, indicating the threshold between quasi-stationary and nonstationary statistical behavior. 
+&lt;br /&gt;&lt;br /&gt;
+Using bat echo-location data, an experimental determination was made that &lt;script type=&quot;math/tex&quot;&gt;N = 38&lt;/script&gt; samples was the threshold between quasi-stationary and stationary statistical behavior. The time-vs-frequency gram created by using a sample spectrum (magnitude of FFT) for each analysis intervals of 38 samples, with 37 sample overlap (i.e., only one sample shift), is shown in the figure below. Notice the four separate signal components being generated simultaneously by the bat during echo-location.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/bat_TFR.png&quot; /&gt;
+	&lt;figcaption&gt;TF analysis of a bat echo-location signal.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The bat data has an approximately linear time-vs-frequency trajectory in the TF analysis gram that makes it possible to calulate an approximation for the longest time interval in which the bat signal can be considered to be quasi-stationary. The Fourier transform of a windowed data segment of duration &lt;script type=&quot;math/tex&quot;&gt;NT&lt;/script&gt; seconds (where &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; is the number of data points and &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; is the sampling interval) produces a frequency domain spectrum mainlobe response which is roughly &lt;script type=&quot;math/tex&quot;&gt;1/NT&lt;/script&gt; Hz in 3dB bandwidth. Therfore, a criterion for having a roughly stationary statistical behavior is that any change in frequency content be less than &lt;script type=&quot;math/tex&quot;&gt;1/NT&lt;/script&gt; Hz over an analysis interval, as this is not resolvable. If this can be made true, the signal is considered to be quasi-stationary over the analysis interval of &lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; samples. From examining the bat spectrogram, we can see there is an approximately linear change of frequency vs time from 50 KHz at 0.65ms to 32 KHz at 1.8 ms. The slope in this region is &lt;script type=&quot;math/tex&quot;&gt;s=(50-32)/(1.8-0.65)=15.65&lt;/script&gt; KHz/ms. Thus, if &lt;script type=&quot;math/tex&quot;&gt;NT&lt;/script&gt; is expressed in ms, the change in frequency is &lt;script type=&quot;math/tex&quot;&gt;sNT&lt;/script&gt; KHz. We want this to be less than the mainlobe response bandwidth. So, the threshold between quasi-stationary and nonstationary conditions is approximately &lt;script type=&quot;math/tex&quot;&gt;sNT = 1/NT&lt;/script&gt;. Since the bat data was sampled at &lt;script type=&quot;math/tex&quot;&gt;T = 7&lt;/script&gt; microseconds, solving for &lt;script type=&quot;math/tex&quot;&gt;N^2=1/sT^2&lt;/script&gt; yields &lt;script type=&quot;math/tex&quot;&gt;N = 36.1&lt;/script&gt; samples, which compares well with our experimentally determined value of &lt;script type=&quot;math/tex&quot;&gt;N=38&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Try some of these parameter changes to explore what happens:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Change the FTT size (example - 64 samples, or 2048 samples)&lt;/li&gt;
+  &lt;li&gt;Change the analysis interval duration (example - 8 samples or 256 samples)&lt;/li&gt;
+  &lt;li&gt;Change the overlap sample size (example -  make same as analysis inteval duration, try &lt;script type=&quot;math/tex&quot;&gt;1/2&lt;/script&gt; that size)&lt;/li&gt;
+  &lt;li&gt;Make notes on what changes while you experiment
+&lt;br /&gt;
+    &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Don’t forget to download the code and bat signal data so you can try for yourself - &lt;a href=&quot;https://github.com/ohmdsp/TF-Bat-Signal-Analysis&quot;&gt;Code &amp;amp; Bat Data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks to Dr. Larry Marple Jr. for the introduction to time-frequency analytics back when I was in graduate school. You should check out his book on &lt;a href=&quot;https://www.amazon.com/Digital-Spectral-Analysis-Electrical-Engineering/dp/048678052X&quot;&gt;Spectral Analysis&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/time-frequency-analysis-of-nonstationary-signals/&quot;&gt;Time-Frequency Analysis of Non-Stationary Signals&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on January 22, 2017.&lt;/p&gt;</content>
+</entry>
+
+</feed>
