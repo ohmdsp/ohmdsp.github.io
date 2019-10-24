@@ -1,4 +1,4 @@
-#_site/
+_site/
 Gemfile.lock
 *.gem
 #vendor/bundle/ruby/2.6.0/extensions/
