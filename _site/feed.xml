@@ -5,13 +5,31 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2019-10-24T16:10:23-04:00</updated>
+<updated>2019-10-24T16:49:39-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
   <uri>http://localhost:4000/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Intuitive Derivations In DSP]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/intuitive-derivations-for-dsp/" />
+  <id>http://localhost:4000/intuitive-derivations-for-dsp</id>
+  <published>2019-10-23T00:00:00-04:00</published>
+  <updated>2019-10-23T00:00:00-04:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;The following explanation is from a series of notes I created for a digital signal processing course.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/intuitive-derivations-for-dsp/&quot;&gt;Intuitive Derivations In DSP&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on October 23, 2019.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -37,9 +55,11 @@
   &lt;li&gt;&lt;strong&gt;The Signal And The Noise&lt;/strong&gt;, by Nate Silver&lt;br /&gt;
  This book is packed with information and stories related to statistical analysis of world events, weather patterns, natural disasters, markets, etc. I found it to be a little too wordy throughout and had to skim some sections in order to stay interested. However, it is worth reading if you want to hear about statistical prediction applied to many different modern history events. If you want to learn about the actual math behind statistical prediction, you will need to get a different book.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;The Theoretical Minimum&lt;/strong&gt;, by Leonard Susskind&lt;br /&gt;
- bla bla bla&lt;/li&gt;
-  &lt;li&gt;TBD
-&lt;br /&gt;&lt;/li&gt;
+ This is a good book for brushing up on your basic physics. I put it in my re-read list since it never hurts to go over it again. I am looking forward to reading/studying Dr. Susskind’s other books on quantum mechanics and relativity.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Thinking Fast and Slow&lt;/strong&gt;, by Daniel Kahneman&lt;br /&gt;
+ If you like psychology and the study of human decision making, you will likely enjoy this book. I did not find it to be a quick read, but instead required several weeks to digest piece by piece. At times, the book feels like a random assortment of stories and studies, so don’t expect an organized story. There is a lot of interesting information about human thinking, and decision bias.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Radioactive Boy Scout&lt;/strong&gt;, by Ken Silverstein&lt;br /&gt;
+I loved this short book. The story is both inspiring and sad. There is a lot of general information about radioactivity and physics presented in a comfortable manner. I highly recommend this book to anyone interested in physics or chemistry.&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Ongoing-Reading-List/&quot;&gt;My Reading Recommendations&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 21, 2019.&lt;/p&gt;</content>
