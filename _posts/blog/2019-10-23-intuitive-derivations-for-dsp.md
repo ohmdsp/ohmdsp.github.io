@@ -81,7 +81,7 @@ Just like the experiment when we put in a complex exponential, we notice that th
 \$$  y[n] = z^{n}H(z) $$
 
 where $$H(z)$$ is called the "transfer function" of the system. In general, the transfer function of a signal $$x[n]$$ is computed by
-$$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$
+\$$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$
 
 This is called the z-transform! A cool fact is that the z-transform can be used to analyze unstable systems. Also, notice that the z-transform reduces to the DTFT when $$r=1$$. 
 

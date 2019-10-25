@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2019-10-25T09:29:33-04:00</updated>
+<updated>2019-10-25T09:30:30-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -96,7 +96,7 @@ $$  y[n] = z^{n} \sum^{\infty}_{k=-\infty}h[k]z^{-k} $$&lt;/p&gt;
 $$  y[n] = z^{n}H(z) $$&lt;/p&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;H(z)&lt;/script&gt; is called the “transfer function” of the system. In general, the transfer function of a signal &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; is computed by
-&lt;script type=&quot;math/tex&quot;&gt;X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n}&lt;/script&gt;&lt;/p&gt;
+$$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$&lt;/p&gt;
 
 &lt;p&gt;This is called the z-transform! A cool fact is that the z-transform can be used to analyze unstable systems. Also, notice that the z-transform reduces to the DTFT when &lt;script type=&quot;math/tex&quot;&gt;r=1&lt;/script&gt;.&lt;/p&gt;
 
