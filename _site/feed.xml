@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2019-10-25T09:13:35-04:00</updated>
+<updated>2019-10-25T09:29:33-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -25,17 +25,15 @@
     <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;The following explanation is from a series of notes I created for a digital signal processing course.&lt;/p&gt;
-
-&lt;p&gt;One of the most important concepts in signal processing is that a Linear-Time-Invariant (LTI) system is completely characterised in the time-domain by the output response to a unit impulse input.
+  <content type="html">&lt;p&gt;One of the most important concepts in signal processing is that a Linear-Time-Invariant (LTI) system is completely characterised in the time-domain by the output response to a unit impulse input.
 $$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$&lt;/p&gt;
 
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;h[n]&lt;/script&gt; is called the “impulse response” of the system.&lt;/p&gt;
+&lt;p&gt;where the output h[n] is called the “impulse response” of the system.&lt;/p&gt;
 
 &lt;p&gt;Let’s imagine that we want to experiment with our LTI system by sending in other kinds of signals (or sequences). An arbitray discrete-time sequence can be represented as a sum of scaled, time-shifted impulses. For example, a short sequence could be
 $$ s[n] = x[1]\delta[n-1] + x[2]\delta[n-2] + x[7]\delta[n-7] $$&lt;/p&gt;
 
-&lt;p&gt;where the &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; terms are the repective amplitudes.&lt;/p&gt;
+&lt;p&gt;where the x[n] terms are the repective amplitudes.&lt;/p&gt;
 
 &lt;p&gt;More generally, any arbitraty discrete-time sequence can be expressed as a weighted superpossition of time-shifted pulses
 $$ s[n] = \sum^{\infty}_{k=-\infty}x[k]\delta[n-k] $$&lt;/p&gt;
@@ -50,14 +48,14 @@ $$ x[k]\delta[n-k] \rightarrow \boxed{LTI} \rightarrow x[k]h[n-k] $$&lt;/p&gt;
 &lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;k = n-k&lt;/script&gt; and rewrite as
 $$ y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k] $$&lt;/p&gt;
 
-&lt;p&gt;which is the well-known convolution sum. We can now say that if we input a signal into an LTI system, the output is given by the convolution of the input with the system impulse response. 
+&lt;p&gt;which is the well-known convolution sum. We can now say that if we input a signal into an LTI system, the output is given by the convolution of the input with the system impulse response 
 $$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] $$&lt;/p&gt;
 
 &lt;p&gt;where convolution can be written shorthand as
 $$ y[n] = x[n] * h[n] $$&lt;/p&gt;
 
 &lt;p&gt;This is really cool. All we have done so far is experiment with input signals made up of scaled and delayed unit impulses. What would happen if we used a complex exponential as the input?
-$$ e^{j\omega n} \rightarrow \boxed{LTI} \rightarrow ? $$&lt;/p&gt;
+$$ x[n] = e^{j\omega n}$$&lt;/p&gt;
 
 &lt;p&gt;Recall again that the output of an LTI system due to an input x[n] is
 $$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k]$$&lt;/p&gt;
@@ -95,10 +93,10 @@ $$  z^{n} \rightarrow \boxed{LTI} \rightarrow \sum^{\infty}_{k=-\infty}h[k]z^{n-
 $$  y[n] = z^{n} \sum^{\infty}_{k=-\infty}h[k]z^{-k} $$&lt;/p&gt;
 
 &lt;p&gt;Just like the experiment when we put in a complex exponential, we notice that the output again the input multiplied by a complex scale term. We can reqrite this as
- $$  y[n] = z^{n}H(z) $$&lt;/p&gt;
+$$  y[n] = z^{n}H(z) $$&lt;/p&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;H(z)&lt;/script&gt; is called the “transfer function” of the system. In general, the transfer function of a signal &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; is computed by
- &lt;script type=&quot;math/tex&quot;&gt;X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n}&lt;/script&gt;&lt;/p&gt;
+&lt;script type=&quot;math/tex&quot;&gt;X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n}&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;This is called the z-transform! A cool fact is that the z-transform can be used to analyze unstable systems. Also, notice that the z-transform reduces to the DTFT when &lt;script type=&quot;math/tex&quot;&gt;r=1&lt;/script&gt;.&lt;/p&gt;
 

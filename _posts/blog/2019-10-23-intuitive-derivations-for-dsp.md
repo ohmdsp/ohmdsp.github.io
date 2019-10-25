@@ -10,17 +10,15 @@ image:
 published: true
 ---
 
-The following explanation is from a series of notes I created for a digital signal processing course.
-
 One of the most important concepts in signal processing is that a Linear-Time-Invariant (LTI) system is completely characterised in the time-domain by the output response to a unit impulse input.
 \$$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$
 
-where $$h[n]$$ is called the "impulse response" of the system. 
+where the output h[n] is called the "impulse response" of the system. 
 
 Let's imagine that we want to experiment with our LTI system by sending in other kinds of signals (or sequences). An arbitray discrete-time sequence can be represented as a sum of scaled, time-shifted impulses. For example, a short sequence could be
 \$$ s[n] = x[1]\delta[n-1] + x[2]\delta[n-2] + x[7]\delta[n-7] $$
 
-where the $$x[n]$$ terms are the repective amplitudes. 
+where the x[n] terms are the repective amplitudes. 
 
 More generally, any arbitraty discrete-time sequence can be expressed as a weighted superpossition of time-shifted pulses
 \$$ s[n] = \sum^{\infty}_{k=-\infty}x[k]\delta[n-k] $$
@@ -35,14 +33,14 @@ So, when we input the complete arbitray sequence we end up with
 Let $$k = n-k$$ and rewrite as
 \$$ y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k] $$
 
-which is the well-known convolution sum. We can now say that if we input a signal into an LTI system, the output is given by the convolution of the input with the system impulse response. 
+which is the well-known convolution sum. We can now say that if we input a signal into an LTI system, the output is given by the convolution of the input with the system impulse response 
 \$$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] $$
 
 where convolution can be written shorthand as
 \$$ y[n] = x[n] * h[n] $$
 
 This is really cool. All we have done so far is experiment with input signals made up of scaled and delayed unit impulses. What would happen if we used a complex exponential as the input?
-\$$ e^{j\omega n} \rightarrow \boxed{LTI} \rightarrow ? $$
+\$$ x[n] = e^{j\omega n}$$
 
 Recall again that the output of an LTI system due to an input x[n] is
 \$$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k]$$
@@ -80,11 +78,11 @@ Notice that the right side output can be simplified to be
 \$$  y[n] = z^{n} \sum^{\infty}_{k=-\infty}h[k]z^{-k} $$
 
 Just like the experiment when we put in a complex exponential, we notice that the output again the input multiplied by a complex scale term. We can reqrite this as
- \$$  y[n] = z^{n}H(z) $$
+\$$  y[n] = z^{n}H(z) $$
 
- where $$H(z)$$ is called the "transfer function" of the system. In general, the transfer function of a signal $$x[n]$$ is computed by
- $$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$
+where $$H(z)$$ is called the "transfer function" of the system. In general, the transfer function of a signal $$x[n]$$ is computed by
+$$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$
 
- This is called the z-transform! A cool fact is that the z-transform can be used to analyze unstable systems. Also, notice that the z-transform reduces to the DTFT when $$r=1$$. 
+This is called the z-transform! A cool fact is that the z-transform can be used to analyze unstable systems. Also, notice that the z-transform reduces to the DTFT when $$r=1$$. 
 
- Ok. We have arrived at a few very important DSP tools (e.g., convolution, DTFT, DFT, and z-transform) just by running experiments that look at the output of an LTI system given a few different input signal types. These tools from the foundation of much of signal processing theory. In the next post, we will dive deeper into how to use these tools, and look at the inverse transforms associated with the DTFT and z-transform. 
+Ok. We have arrived at a few very important DSP tools (e.g., convolution, DTFT, DFT, and z-transform) just by running experiments that look at the output of an LTI system given a few different input signal types. These tools from the foundation of much of signal processing theory. In the next post, we will dive deeper into how to use these tools, and look at the inverse transforms associated with the DTFT and z-transform. 
