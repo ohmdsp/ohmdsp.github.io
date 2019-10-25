@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2019-10-25T19:03:43-04:00</updated>
+<updated>2019-10-25T19:04:31-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -98,7 +98,7 @@ $$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$&lt;/p&gt;
 
 &lt;p&gt;This is called the z-transform! A cool fact is that the z-transform can be used to analyze unstable systems. Also, notice that the z-transform reduces to the DTFT when &lt;script type=&quot;math/tex&quot;&gt;r=1&lt;/script&gt;.&lt;/p&gt;
 
-&lt;p&gt;Ok. We have arrived at a few very important DSP mathematical tools (e.g., convolution, DTFT, DFT, and z-transform) just by running experiments that look at the output of an LTI system given different input signal types. These powerful mathematical tools form the foundation digital signal processing theory. In a future post, I will dive deeper into how these tools can be used, and I will introduce the inverse transforms associated with the DTFT, DFT and z-transform.&lt;/p&gt;
+&lt;p&gt;Ok. We have arrived at a few very important DSP mathematical tools (e.g., convolution, DTFT, DFT, and z-transform) just by running experiments that look at the output of an LTI system given different input signal types. These powerful mathematical tools form the foundation of digital signal processing theory. In a future post, I will dive deeper into how these tools can be used, and I will introduce the inverse transforms associated with the DTFT, DFT and z-transform.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/intuitive-derivations-for-dsp/&quot;&gt;Intuitive Derivations In DSP&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on October 23, 2019.&lt;/p&gt;</content>
 </entry>
