@@ -110,46 +110,46 @@ body {
 /* Meat
    ========================================================================== */
 p {
-  font-size: 24px;
-  line-height: 32px; }
+  font-size: 22px;
+  line-height: 30px; }
 
 .intro {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.4em; }
 
 .post ul li {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 30px;
   margin-bottom: 10.6666666667px; }
 
 /* Headings
    ========================================================================== */
 h1, .h1 {
-  font-size: 64px; }
+  font-size: 62px; }
 
 h2, .h2 {
-  font-size: 48px; }
+  font-size: 46px; }
 
 h3, .h3 {
-  font-size: 32px; }
+  font-size: 30px; }
 
 h4, .h4 {
-  font-size: 24px; }
+  font-size: 22px; }
 
 h5, .h5 {
   font-size: 16px; }
 
 h6, .h6 {
-  font-size: 14px; }
+  font-size: 12px; }
 
 .meta {
-  font-size: 14px; }
+  font-size: 12px; }
 
 blockquote, blockquote p {
-  font-size: 48px; }
+  font-size: 46px; }
 
 .archive input {
-  font-size: 48px; }
+  font-size: 46px; }
 
 @media only screen and (max-width: 480px) {
   p {

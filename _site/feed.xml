@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2019-10-24T16:49:39-04:00</updated>
+<updated>2019-10-25T09:13:35-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -25,8 +25,84 @@
     <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;The following explanation is from a series of notes I created for a digital signal processing course.
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+  <content type="html">&lt;p&gt;The following explanation is from a series of notes I created for a digital signal processing course.&lt;/p&gt;
+
+&lt;p&gt;One of the most important concepts in signal processing is that a Linear-Time-Invariant (LTI) system is completely characterised in the time-domain by the output response to a unit impulse input.
+$$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$&lt;/p&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;h[n]&lt;/script&gt; is called the “impulse response” of the system.&lt;/p&gt;
+
+&lt;p&gt;Let’s imagine that we want to experiment with our LTI system by sending in other kinds of signals (or sequences). An arbitray discrete-time sequence can be represented as a sum of scaled, time-shifted impulses. For example, a short sequence could be
+$$ s[n] = x[1]\delta[n-1] + x[2]\delta[n-2] + x[7]\delta[n-7] $$&lt;/p&gt;
+
+&lt;p&gt;where the &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; terms are the repective amplitudes.&lt;/p&gt;
+
+&lt;p&gt;More generally, any arbitraty discrete-time sequence can be expressed as a weighted superpossition of time-shifted pulses
+$$ s[n] = \sum^{\infty}_{k=-\infty}x[k]\delta[n-k] $$&lt;/p&gt;
+
+&lt;p&gt;We can experiment by inputting this arbitray sequence into our LTI system and determining the output. If we input a single wighted impulse we get
+$$ x[k]\delta[n-k] \rightarrow \boxed{LTI} \rightarrow x[k]h[n-k] $$&lt;/p&gt;
+
+&lt;p&gt;So, when we input the complete arbitray sequence we end up with&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum^{\infty}_{k=-\infty}x[k]\delta[n-k] \rightarrow \boxed{LTI} \rightarrow \sum^{\infty}_{k=-\infty}x[k]h[n-k]&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;k = n-k&lt;/script&gt; and rewrite as
+$$ y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k] $$&lt;/p&gt;
+
+&lt;p&gt;which is the well-known convolution sum. We can now say that if we input a signal into an LTI system, the output is given by the convolution of the input with the system impulse response. 
+$$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] $$&lt;/p&gt;
+
+&lt;p&gt;where convolution can be written shorthand as
+$$ y[n] = x[n] * h[n] $$&lt;/p&gt;
+
+&lt;p&gt;This is really cool. All we have done so far is experiment with input signals made up of scaled and delayed unit impulses. What would happen if we used a complex exponential as the input?
+$$ e^{j\omega n} \rightarrow \boxed{LTI} \rightarrow ? $$&lt;/p&gt;
+
+&lt;p&gt;Recall again that the output of an LTI system due to an input x[n] is
+$$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k]$$&lt;/p&gt;
+
+&lt;p&gt;When &lt;script type=&quot;math/tex&quot;&gt;x[n] = e^{j\omega n}&lt;/script&gt; the output will be
+$$ y[n] = \sum^{\infty}_{k=-\infty}h[k]e^{j\omega(n-k)} $$&lt;/p&gt;
+
+&lt;p&gt;which can be written as 
+$$ y[n] = e^{i\omega n} \sum^{\infty}_{k=-\infty}h[k]e^{-j\omega(k)} $$&lt;/p&gt;
+
+&lt;p&gt;Let’s denote the summation term as &lt;script type=&quot;math/tex&quot;&gt;H(e^{j\omega})&lt;/script&gt;. Then we can express our LTI experiment by
+$$  e^{j\omega n} \rightarrow \boxed{LTI} \rightarrow H(e^{j\omega}) e^{i\omega n} $$&lt;/p&gt;
+
+&lt;p&gt;Notice that we input a complex exponential and we got out the same complex exponential multiplied by a complex scaling term. The scaling term is called the “frequency response” or “spectrum” and can be written as
+$$ H(e^{j\omega}) = \sum^{\infty}_{k=-\infty}h[k]e^{-j\omega k} $$&lt;/p&gt;
+
+&lt;p&gt;When we let k=n this becomes the equation for the Discrete Time Fourier Transform!
+$$ H(e^{j\omega}) = \sum^{\infty}_{n=-\infty}h[n]e^{-j\omega n} $$&lt;/p&gt;
+
+&lt;p&gt;Notice that by using a complex exponential as the input to an LTI system, we turned convolution into multiplication. Also, the complex spectrum can be computed for any input signal by
+$$ X(e^{j\omega}) = \sum^{\infty}_{n=-\infty}x[n]e^{-j\omega n} $$&lt;/p&gt;
+
+&lt;p&gt;In practice, we do not use the DTFT but instead use the DFT. If our signal sample indices are &lt;script type=&quot;math/tex&quot;&gt;0 \leq n \leq N-1&lt;/script&gt;
+$$ X(e^{j\omega}) = \sum^{N-1}_{n=0}x[n]e^{-j\omega n} $$&lt;/p&gt;
+
+&lt;p&gt;Let’s uniformly sample the continuous function &lt;script type=&quot;math/tex&quot;&gt;X(e^{j\omega})&lt;/script&gt; at N equally spaced frequencys between &lt;script type=&quot;math/tex&quot;&gt;0 \leq k \leq N-1&lt;/script&gt;, or &lt;script type=&quot;math/tex&quot;&gt;\omega = 2\pi k/N&lt;/script&gt; to get
+$$ X[k] = \sum^{N-1}_{n=0}x[n]e^{-j\frac{2\pi kn}{N}} $$&lt;/p&gt;
+
+&lt;p&gt;Note, that &lt;script type=&quot;math/tex&quot;&gt;X[k]&lt;/script&gt; is complex valued even when &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; is real valued.&lt;/p&gt;
+
+&lt;p&gt;Now, let’s continue with our experiments. What would happen if we input a more general complex value into our LTI system? Let &lt;script type=&quot;math/tex&quot;&gt;x[n] = z^{n}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;z = re^{j\omega n}&lt;/script&gt;. This is a general complex exponential with a variable amplitude.
+$$  z^{n} \rightarrow \boxed{LTI} \rightarrow \sum^{\infty}_{k=-\infty}h[k]z^{n-k} $$&lt;/p&gt;
+
+&lt;p&gt;Notice that the right side output can be simplified to be
+$$  y[n] = z^{n} \sum^{\infty}_{k=-\infty}h[k]z^{-k} $$&lt;/p&gt;
+
+&lt;p&gt;Just like the experiment when we put in a complex exponential, we notice that the output again the input multiplied by a complex scale term. We can reqrite this as
+ $$  y[n] = z^{n}H(z) $$&lt;/p&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;H(z)&lt;/script&gt; is called the “transfer function” of the system. In general, the transfer function of a signal &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; is computed by
+ &lt;script type=&quot;math/tex&quot;&gt;X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This is called the z-transform! A cool fact is that the z-transform can be used to analyze unstable systems. Also, notice that the z-transform reduces to the DTFT when &lt;script type=&quot;math/tex&quot;&gt;r=1&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ok. We have arrived at a few very important DSP tools (e.g., convolution, DTFT, DFT, and z-transform) just by running experiments that look at the output of an LTI system given a few different input signal types. These tools from the foundation of much of signal processing theory. In the next post, we will dive deeper into how to use these tools, and look at the inverse transforms associated with the DTFT and z-transform.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/intuitive-derivations-for-dsp/&quot;&gt;Intuitive Derivations In DSP&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on October 23, 2019.&lt;/p&gt;</content>
 </entry>
