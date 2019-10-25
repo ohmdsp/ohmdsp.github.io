@@ -8,7 +8,7 @@
   <div class="featured-image" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})"></div>
 {% else %}
 
-{% include head-dark.html %}
+<!--{% include head-dark.html %}
 
 <section class="article pad-top" id="content">
   
@@ -24,25 +24,25 @@
       ]
     }
   );
-</script> 
+</script> -->
 {% endif %}
 
-      <article class="wrap post">
-        <header class="post-header">
-          <hgroup>
-            <h1><a href="{{page.url}}">{{page.title}}</a></h1>
-            <br>
-            <!-- <p class="date">{% if page.modified %}<span class="date">Updated on <time datetime="{{ page.modified }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time></span>{% else %}Published on <span class="date">{{page.date | date: "%b %d, %Y" }}</span>{% endif %}&nbsp;|&nbsp;By <span itemprop="name" class="fn"><a href="{{ site.url }}/about" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span> | <a href="{{ page.url }}">Permalink</a></p> -->
+    <article class="wrap post">
+      <header class="post-header">
+        <hgroup>
+          <h1><a href="{{page.url}}">{{page.title}}</a></h1>
+          <br>
+          <!-- <p class="date">{% if page.modified %}<span class="date">Updated on <time datetime="{{ page.modified }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time></span>{% else %}Published on <span class="date">{{page.date | date: "%b %d, %Y" }}</span>{% endif %}&nbsp;|&nbsp;By <span itemprop="name" class="fn"><a href="{{ site.url }}/about" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span> | <a href="{{ page.url }}">Permalink</a></p> -->
 
-            <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
-          </hgroup>
-        </header>
+          <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
+        </hgroup>
+      </header>
 
-        {{ content }}
+      {{ content }}
 
-      </article>
-    </section>
-</div>
+    </article>
+</section>
+<!--
 <script>
     var scripts = document.getElementsByTagName("script");
     for (var i = 0; i < scripts.length; i++) {
@@ -58,7 +58,7 @@
     }
     document.body.className += " math_finished";
 </script>
-
+-->
 <!-- Mathjax Support -->
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
