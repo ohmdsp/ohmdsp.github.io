@@ -10,23 +10,23 @@ image:
 published: true
 ---
 
-One of the most important concepts in digital signal processing is that a Linear-Time-Invariant (LTI) system is completely characterised in the time-domain by the output response to a unit impulse input. This can be depicted as probing an LTI system with a Kronecker delta function and determining the output function.
+One of the most important concepts in digital signal processing is that a Linear-Time-Invariant (LTI) system is completely characterized in the time-domain by the output response to a unit impulse input. This can be imagined as probing the input of an LTI system with a Kronecker delta function and then determining the resulting output. 
 \$$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$
 
-In this simple depiction, the output function is $$h[n]$$ and is called the "impulse response" of the system. 
+In this simple diagram, the output function $$h[n]$$ is called the "impulse response" of the system. 
 
-Let's imagine that we want to experiment with our LTI system by sending in other kinds of discrete-time sequences (or signals). For example, a short sequence could be
+Let's imagine that we want to experiment with our LTI system by sending in other kinds of discrete-time sequences (i.e. signals). For example, a short sequence could be
 \$$ s[n] = x[1]\delta[n-1] + x[2]\delta[n-2] + x[7]\delta[n-7] $$
 
-where the $$x[k]$$ terms are the repective amplitudes of each time-delayed unit impulse. 
+where the $$x[k]$$ terms are the amplitudes of each time-delayed unit impulse. 
 
-More generally, any arbitraty discrete-time sequence can be expressed as a weighted superpossition of time-shifted unit impulses, or
+More generally, any arbitrary discrete-time sequence can be expressed as a weighted superposition of time-shifted unit impulses, or
 \$$ s[n] = \sum^{\infty}_{k=-\infty}x[k]\delta[n-k] $$
 
-We can continue our experiments by sending this arbitray sequence into our LTI system and then determining the output based on the rules we know about LTI systems. For exmple, if we input a single scaled and time-delayed impulse, we would get a scaled  and time-delayed unit impulse response at the output
+We can continue our experiment by sending this arbitrary sequence into our LTI system and then determining the output based on the rules we know about LTI systems. For example, if we input a single scaled and time-delayed impulse, we would get a scaled  and time-delayed unit impulse response at the output
 \$$ x[k]\delta[n-k] \rightarrow \boxed{LTI} \rightarrow x[k]h[n-k] $$
 
-Using the same rules, when we input the full arbitray sequence, we end up with
+Using the same rules, when we input the full arbitrary sequence, we end up with
 \$$ \sum^{\infty}_{k=-\infty}x[k]\delta[n-k] \rightarrow \boxed{LTI} \rightarrow y[n] $$
 
 where the output can be expressed by
@@ -35,12 +35,12 @@ where the output can be expressed by
 Letting $$k = n-k$$ and rewriting this output, gives us
 \$$ y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k] $$
 
-which is the well-known convolution sum! Our experiment has shown us that if we input any arbitray signal into an LTI system, the output will be the convolution of the input signal with the system impulse response 
+which is the well-known convolution sum! Our experiment has shown us that if we input any arbitrary signal into an LTI system, the output will be the convolution of the input signal with the system impulse response, or 
 \$$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] = x[n] * h[n] $$
 
-where $$ x[n] * h[n] $$ is a shorthand method of expressing the convolution operation.
+where $$ x[n] * h[n] $$ is a shorthand way of expressing the convolution operation.
 
-This is certainly a very interesting result considering that all we have done so far is experiment with input signals made up of scaled and delayed unit impulses. What would happen if we used a different input? How about using a complex exponential as the input?
+This is certainly a very interesting result considering all we have done so far is experiment with input signals made up of scaled and delayed unit impulses. What would happen if we used a different input? How about using a complex exponential as the input?
 \$$ x[n] = e^{j\omega n}$$
 
 Recall again that the output of an LTI system due to an input $$x[n]$$ is just the convolution of the input and the system impulse response, or
@@ -52,13 +52,13 @@ When $$x[n] = e^{j\omega n}$$ the output will be
 which can be rearranged to look like 
 \$$ y[n] = e^{i\omega n} \sum^{\infty}_{k=-\infty}h[k]e^{-j\omega(k)} $$
 
-Let's assign a function to the summation term to be $$H(e^{j\omega})$$. Then we can rewrite the output like this
+Let's write the summation term as a function $$H(e^{j\omega})$$. Then we can rewrite the output like this
 \$$  e^{j\omega n} \rightarrow \boxed{LTI} \rightarrow H(e^{j\omega}) e^{i\omega n} $$
 
 Now, take a minute to notice that although we input a complex exponential to our LTI system, we got out the same complex exponential multiplied by a complex scaling term! The scaling term is called the "frequency response" or "spectrum" and it can be written as
 \$$ H(e^{j\omega}) = \sum^{\infty}_{k=-\infty}h[k]e^{-j\omega k} $$
 
-When we let k=n this becomes the equation for the Discrete-Time-Fourier-Transform, which is an important teoretical tool for understanding digital signal processing. We can write the DTFT as
+When we let k=n this becomes the equation for the Discrete-Time-Fourier-Transform, which is an important theoretical tool for understanding digital signal processing. We can write the DTFT as
 \$$ H(e^{j\omega}) = \sum^{\infty}_{n=-\infty}h[n]e^{-j\omega n} $$
 
 Another thing to notice is that by using a complex exponential as the input to an LTI system, we turned convolution into multiplication. The complex spectrum can be computed for any signal by

@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2019-10-25T23:03:36-04:00</updated>
+<updated>2019-10-28T20:56:03-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -25,23 +25,23 @@
     <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;One of the most important concepts in digital signal processing is that a Linear-Time-Invariant (LTI) system is completely characterised in the time-domain by the output response to a unit impulse input. This can be depicted as probing an LTI system with a Kronecker delta function and determining the output function.
+  <content type="html">&lt;p&gt;One of the most important concepts in digital signal processing is that a Linear-Time-Invariant (LTI) system is completely characterized in the time-domain by the output response to a unit impulse input. This can be imagined as probing the input of an LTI system with a Kronecker delta function and then determining the resulting output. 
 $$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$&lt;/p&gt;
 
-&lt;p&gt;In this simple depiction, the output function is &lt;script type=&quot;math/tex&quot;&gt;h[n]&lt;/script&gt; and is called the “impulse response” of the system.&lt;/p&gt;
+&lt;p&gt;In this simple diagram, the output function &lt;script type=&quot;math/tex&quot;&gt;h[n]&lt;/script&gt; is called the “impulse response” of the system.&lt;/p&gt;
 
-&lt;p&gt;Let’s imagine that we want to experiment with our LTI system by sending in other kinds of discrete-time sequences (or signals). For example, a short sequence could be
+&lt;p&gt;Let’s imagine that we want to experiment with our LTI system by sending in other kinds of discrete-time sequences (i.e. signals). For example, a short sequence could be
 $$ s[n] = x[1]\delta[n-1] + x[2]\delta[n-2] + x[7]\delta[n-7] $$&lt;/p&gt;
 
-&lt;p&gt;where the &lt;script type=&quot;math/tex&quot;&gt;x[k]&lt;/script&gt; terms are the repective amplitudes of each time-delayed unit impulse.&lt;/p&gt;
+&lt;p&gt;where the &lt;script type=&quot;math/tex&quot;&gt;x[k]&lt;/script&gt; terms are the amplitudes of each time-delayed unit impulse.&lt;/p&gt;
 
-&lt;p&gt;More generally, any arbitraty discrete-time sequence can be expressed as a weighted superpossition of time-shifted unit impulses, or
+&lt;p&gt;More generally, any arbitrary discrete-time sequence can be expressed as a weighted superposition of time-shifted unit impulses, or
 $$ s[n] = \sum^{\infty}_{k=-\infty}x[k]\delta[n-k] $$&lt;/p&gt;
 
-&lt;p&gt;We can continue our experiments by sending this arbitray sequence into our LTI system and then determining the output based on the rules we know about LTI systems. For exmple, if we input a single scaled and time-delayed impulse, we would get a scaled  and time-delayed unit impulse response at the output
+&lt;p&gt;We can continue our experiment by sending this arbitrary sequence into our LTI system and then determining the output based on the rules we know about LTI systems. For example, if we input a single scaled and time-delayed impulse, we would get a scaled  and time-delayed unit impulse response at the output
 $$ x[k]\delta[n-k] \rightarrow \boxed{LTI} \rightarrow x[k]h[n-k] $$&lt;/p&gt;
 
-&lt;p&gt;Using the same rules, when we input the full arbitray sequence, we end up with
+&lt;p&gt;Using the same rules, when we input the full arbitrary sequence, we end up with
 $$ \sum^{\infty}_{k=-\infty}x[k]\delta[n-k] \rightarrow \boxed{LTI} \rightarrow y[n] $$&lt;/p&gt;
 
 &lt;p&gt;where the output can be expressed by
@@ -50,12 +50,12 @@ $$ y[n]=\sum^{\infty}_{k=-\infty}x[k]h[n-k]$$&lt;/p&gt;
 &lt;p&gt;Letting &lt;script type=&quot;math/tex&quot;&gt;k = n-k&lt;/script&gt; and rewriting this output, gives us
 $$ y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k] $$&lt;/p&gt;
 
-&lt;p&gt;which is the well-known convolution sum! Our experiment has shown us that if we input any arbitray signal into an LTI system, the output will be the convolution of the input signal with the system impulse response 
+&lt;p&gt;which is the well-known convolution sum! Our experiment has shown us that if we input any arbitrary signal into an LTI system, the output will be the convolution of the input signal with the system impulse response, or 
 $$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] = x[n] * h[n] $$&lt;/p&gt;
 
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;x[n] * h[n]&lt;/script&gt; is a shorthand method of expressing the convolution operation.&lt;/p&gt;
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;x[n] * h[n]&lt;/script&gt; is a shorthand way of expressing the convolution operation.&lt;/p&gt;
 
-&lt;p&gt;This is certainly a very interesting result considering that all we have done so far is experiment with input signals made up of scaled and delayed unit impulses. What would happen if we used a different input? How about using a complex exponential as the input?
+&lt;p&gt;This is certainly a very interesting result considering all we have done so far is experiment with input signals made up of scaled and delayed unit impulses. What would happen if we used a different input? How about using a complex exponential as the input?
 $$ x[n] = e^{j\omega n}$$&lt;/p&gt;
 
 &lt;p&gt;Recall again that the output of an LTI system due to an input &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; is just the convolution of the input and the system impulse response, or
@@ -67,13 +67,13 @@ $$ y[n] = \sum^{\infty}_{k=-\infty}h[k]e^{j\omega(n-k)} $$&lt;/p&gt;
 &lt;p&gt;which can be rearranged to look like 
 $$ y[n] = e^{i\omega n} \sum^{\infty}_{k=-\infty}h[k]e^{-j\omega(k)} $$&lt;/p&gt;
 
-&lt;p&gt;Let’s assign a function to the summation term to be &lt;script type=&quot;math/tex&quot;&gt;H(e^{j\omega})&lt;/script&gt;. Then we can rewrite the output like this
+&lt;p&gt;Let’s write the summation term as a function &lt;script type=&quot;math/tex&quot;&gt;H(e^{j\omega})&lt;/script&gt;. Then we can rewrite the output like this
 $$  e^{j\omega n} \rightarrow \boxed{LTI} \rightarrow H(e^{j\omega}) e^{i\omega n} $$&lt;/p&gt;
 
 &lt;p&gt;Now, take a minute to notice that although we input a complex exponential to our LTI system, we got out the same complex exponential multiplied by a complex scaling term! The scaling term is called the “frequency response” or “spectrum” and it can be written as
 $$ H(e^{j\omega}) = \sum^{\infty}_{k=-\infty}h[k]e^{-j\omega k} $$&lt;/p&gt;
 
-&lt;p&gt;When we let k=n this becomes the equation for the Discrete-Time-Fourier-Transform, which is an important teoretical tool for understanding digital signal processing. We can write the DTFT as
+&lt;p&gt;When we let k=n this becomes the equation for the Discrete-Time-Fourier-Transform, which is an important theoretical tool for understanding digital signal processing. We can write the DTFT as
 $$ H(e^{j\omega}) = \sum^{\infty}_{n=-\infty}h[n]e^{-j\omega n} $$&lt;/p&gt;
 
 &lt;p&gt;Another thing to notice is that by using a complex exponential as the input to an LTI system, we turned convolution into multiplication. The complex spectrum can be computed for any signal by
@@ -115,23 +115,23 @@ $$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$&lt;/p&gt;
     <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;With so many books, blogs, and articles to choose from, it can be helpful to get recommendations from others about what to read. This is my list of suggestions based on the books, blogs and articles that I have read that I feel are most enlightening and enjoyable. Note, that I will keep updating this list as I discover more treasures.
-&lt;br /&gt;&lt;br /&gt;
-&lt;strong&gt;Non-Fiction&lt;/strong&gt;:
-&lt;br /&gt;&lt;/p&gt;
+  <content type="html">&lt;p&gt;With so many books, blogs, and articles out there, it can be helpful to get recommendations from others about what to read. This is my list of suggestions based on what I found to to be enlightening and enjoyable. I will continue to update this list as I discover more treasures.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Seven Brief Lessons on Physics&lt;/strong&gt;, by Carlo Rovelli&lt;br /&gt;
- This is a well-written book that is enjoyable to read and educational.&lt;/li&gt;
+ This is a well-written book that is educational and enjoyable to read. It is a short book, so it can be read in a weekend.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Reality Is Not What It Seems: The Journey to Quantum Gravity&lt;/strong&gt;, by Carlo Rovelli&lt;br /&gt;
- I really enjoyed the background material presented in this book. It felt like a fresh approach to teaching, and the historical connections were enlightening. The later sections on quantum loop gravity were interesting, but less informative than the rest of the book.&lt;/li&gt;
+ I really enjoyed the background material and physics history presented in this book. It felt like a fresh approach to teaching, and the historical connections were enlightening. The later sections of the book on quantum loop gravity were interesting, but less informative than the rest of the book, in my opinion. During a chapter, there is an awkward attempt made to discuss God and religion, which seems hard to resist for physics writers although it is surely outside their expertise. In summary, this book is worth owning and possibly reading a couple times.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;The Signal And The Noise&lt;/strong&gt;, by Nate Silver&lt;br /&gt;
- This book is packed with information and stories related to statistical analysis of world events, weather patterns, natural disasters, markets, etc. I found it to be a little too wordy throughout and had to skim some sections in order to stay interested. However, it is worth reading if you want to hear about statistical prediction applied to many different modern history events. If you want to learn about the actual math behind statistical prediction, you will need to get a different book.&lt;/li&gt;
+ This book is packed with information and stories related to statistical analysis of world events, weather patterns, natural disasters, markets, gambling, etc. I found it to be a little too wordy throughout and had to skim some sections in order to stay interested. However, it is worth reading if you want to know about statistical prediction applied to many different modern history events. If you want to learn about the actual math behind statistical prediction, you will need to get a different book. The sections on games of chance are very interesting.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;The Theoretical Minimum&lt;/strong&gt;, by Leonard Susskind&lt;br /&gt;
- This is a good book for brushing up on your basic physics. I put it in my re-read list since it never hurts to go over it again. I am looking forward to reading/studying Dr. Susskind’s other books on quantum mechanics and relativity.&lt;/li&gt;
+ This is a good book for brushing up on your basic physics. I put it in my re-read list since it never hurts to go over it again. I am looking forward to reading and studying Dr. Susskind’s other books on quantum mechanics and relativity. If you have already read Feynman’s Lectures on Physics, then this is a good next step.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Thinking Fast and Slow&lt;/strong&gt;, by Daniel Kahneman&lt;br /&gt;
- If you like psychology and the study of human decision making, you will likely enjoy this book. I did not find it to be a quick read, but instead required several weeks to digest piece by piece. At times, the book feels like a random assortment of stories and studies, so don’t expect an organized story. There is a lot of interesting information about human thinking, and decision bias.&lt;/li&gt;
+ If you like psychology and the study of human decision making, you will likely enjoy this book. I did not find it to be a quick read, but instead required several weeks to digest piece-by-piece. At times, the book feels like a random assortment of stories and studies, so don’t expect an organized narrative. There is a lot of interesting information about human thinking and decision bias presented in the book. It will have you re-evaluating some of your decision making skills.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;The Radioactive Boy Scout&lt;/strong&gt;, by Ken Silverstein&lt;br /&gt;
-I loved this short book. The story is both inspiring and sad. There is a lot of general information about radioactivity and physics presented in a comfortable manner. I highly recommend this book to anyone interested in physics or chemistry.&lt;/li&gt;
+I loved this short book. The story is both inspiring and sad. There is a lot of general information about radioactivity and physics presented in a comfortable manner. I highly recommend this book to anyone interested in physics or chemistry. It is a great book to share with your teenage son or daughter.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Feynman’s Lectures On Physics&lt;/strong&gt;, by Richard Feynman&lt;br /&gt;
+I recently revisited these lectures for some self-study. I was reminded how good they are. I will admit, than sometimes the conversations get long and wordy, but Dr. Feynman’s thought process is enlightening. Plan to spend many weeks, maybe months, reading/studying these lectures.&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Ongoing-Reading-List/&quot;&gt;My Reading Recommendations&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 21, 2019.&lt;/p&gt;</content>
