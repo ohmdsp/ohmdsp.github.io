@@ -10,7 +10,7 @@ image:
 published: true
 ---
 
-This is my list of reading suggestions based on what I have found educational and/or enjoyable. I will continue to update the list as I discover more treasures.
+This is my list of reading suggestions based on what I have found educational and enjoyable. I will continue to update the list as I discover more treasures.
 <br><br>
  __Seven Brief Lessons on Physics__, by Carlo Rovelli <br>
  This is a well-written book that is both educational and enjoyable. It is a short book, so it can be read in a weekend.  
