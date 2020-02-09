@@ -10,7 +10,7 @@ image:
 published: true
 ---
 
-With so many books, blogs, and articles out there, it can be helpful to get recommendations from others about what to read. This is my list of suggestions based on what I found to to be enlightening and enjoyable. I will continue to update this list as I discover more treasures.
+This is my list of reading suggestions based on what I have found educational and enjoyable. I will continue to update the list as I discover more treasures.
 <br><br>
  * __Seven Brief Lessons on Physics__, by Carlo Rovelli<br>
  This is a well-written book that is educational and enjoyable to read. It is a short book, so it can be read in a weekend.  
@@ -21,8 +21,8 @@ With so many books, blogs, and articles out there, it can be helpful to get reco
  * __The Theoretical Minimum__, by Leonard Susskind<br>
  This is a good book for brushing up on your basic physics. I put it in my re-read list since it never hurts to go over it again. I am looking forward to reading and studying Dr. Susskind's other books on quantum mechanics and relativity. If you have already read Feynman's Lectures on Physics, then this is a good next step.  
  * __Thinking Fast and Slow__, by Daniel Kahneman<br>
- If you like psychology and the study of human decision making, you will likely enjoy this book. I did not find it to be a quick read, but instead required several weeks to digest piece-by-piece. At times, the book feels like a random assortment of stories and studies, so don't expect an organized narrative. There is a lot of interesting information about human thinking and decision bias presented in the book. It will have you re-evaluating some of your decision making skills. 
+ If you like psychology and the study of human decision making, you will likely enjoy this book. I did not find it to be a quick read, but instead required several weeks to digest piece-by-piece. At times, the book feels like a random assortment of stories and studies, so don't expect an organized narrative. There is a lot of interesting information about human thinking and decision bias presented in the book. It will have you re-evaluating some of your decision making skills.
 * __The Radioactive Boy Scout__, by Ken Silverstein<br>
-I loved this short book. The story is both inspiring and sad. There is a lot of general information about radioactivity and physics presented in a comfortable manner. I highly recommend this book to anyone interested in physics or chemistry. It is a great book to share with your teenage son or daughter. 
+I loved this short book. The story is both inspiring and sad. There is a lot of general information about radioactivity and physics presented in a comfortable manner. I highly recommend this book to anyone interested in physics or chemistry. It is a great book to share with your teenage son or daughter.
 * __Feynman's Lectures On Physics__, by Richard Feynman<br>
-I recently revisited these lectures for some self-study. I was reminded how good they are. I will admit, than sometimes the conversations get long and wordy, but Dr. Feynman's thought process is enlightening. Plan to spend many weeks, maybe months, reading/studying these lectures. 
+I recently revisited these lectures for some self-study. I was reminded how good they are. I will admit, than sometimes the conversations get long and wordy, but Dr. Feynman's thought process is enlightening. Plan to spend many weeks, maybe months, reading/studying these lectures.
