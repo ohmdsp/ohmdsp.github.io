@@ -714,7 +714,7 @@ header.site-header nav ul li a:hover {
   display: block;
   float: none;
   font-size: 32px;
-  margin-bottom: -110px;
+  margin-bottom: 0px;
   position: relative; }
 /*
   .archive-wrap .paper-list li a {
