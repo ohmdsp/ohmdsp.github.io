@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2020-02-09T11:57:50-05:00</updated>
+<updated>2020-05-24T15:57:33-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -25,7 +25,7 @@
     <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;One of the most important concepts in digital signal processing is that a Linear-Time-Invariant (LTI) system is completely characterized in the time-domain by the output response to a unit impulse input. This can be imagined as probing the input of an LTI system with a Kronecker delta function and then determining the resulting output. 
+  <content type="html">&lt;p&gt;One of the most important concepts in digital signal processing is that a Linear-Time-Invariant (LTI) system is completely characterized in the time-domain by the output response to a unit impulse input. This can be imagined as probing the input of an LTI system with a Kronecker delta function and then determining the resulting output.
 $$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$&lt;/p&gt;
 
 &lt;p&gt;In this simple diagram, the output function &lt;script type=&quot;math/tex&quot;&gt;h[n]&lt;/script&gt; is called the “impulse response” of the system.&lt;/p&gt;
@@ -50,7 +50,7 @@ $$ y[n]=\sum^{\infty}_{k=-\infty}x[k]h[n-k]$$&lt;/p&gt;
 &lt;p&gt;Letting &lt;script type=&quot;math/tex&quot;&gt;k = n-k&lt;/script&gt; and rewriting this output, gives us
 $$ y[n] = \sum^{\infty}_{k=-\infty}x[n-k]h[k] $$&lt;/p&gt;
 
-&lt;p&gt;which is the well-known convolution sum! Our experiment has shown us that if we input any arbitrary signal into an LTI system, the output will be the convolution of the input signal with the system impulse response, or 
+&lt;p&gt;which is the well-known convolution sum! Our experiment has shown us that if we input any arbitrary signal into an LTI system, the output will be the convolution of the input signal with the system impulse response, or
 $$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] = x[n] * h[n] $$&lt;/p&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;x[n] * h[n]&lt;/script&gt; is a shorthand way of expressing the convolution operation.&lt;/p&gt;
@@ -64,7 +64,7 @@ $$ x[n] \rightarrow \boxed{LTI} \rightarrow y[n] = \sum^{\infty}_{k=-\infty}x[n-
 &lt;p&gt;When &lt;script type=&quot;math/tex&quot;&gt;x[n] = e^{j\omega n}&lt;/script&gt; the output will be
 $$ y[n] = \sum^{\infty}_{k=-\infty}h[k]e^{j\omega(n-k)} $$&lt;/p&gt;
 
-&lt;p&gt;which can be rearranged to look like 
+&lt;p&gt;which can be rearranged to look like
 $$ y[n] = e^{i\omega n} \sum^{\infty}_{k=-\infty}h[k]e^{-j\omega(k)} $$&lt;/p&gt;
 
 &lt;p&gt;Let’s write the summation term as a function &lt;script type=&quot;math/tex&quot;&gt;H(e^{j\omega})&lt;/script&gt;. Then we can rewrite the output like this
@@ -79,7 +79,7 @@ $$ H(e^{j\omega}) = \sum^{\infty}_{n=-\infty}h[n]e^{-j\omega n} $$&lt;/p&gt;
 &lt;p&gt;Another thing to notice is that by using a complex exponential as the input to an LTI system, we turned convolution into multiplication. The complex spectrum can be computed for any signal by
 $$ X(e^{j\omega}) = \sum^{\infty}_{n=-\infty}x[n]e^{-j\omega n} $$&lt;/p&gt;
 
-&lt;p&gt;In practical computer applications, we do not use the DTFT (which has a continuous output) but instead use the DFT (which has a discrete output). For example, if we make our signal sample indices to be &lt;script type=&quot;math/tex&quot;&gt;0 \leq n \leq N-1&lt;/script&gt; and uniformly sample the continuous output &lt;script type=&quot;math/tex&quot;&gt;X(e^{j\omega})&lt;/script&gt; at N equally spaced index point (or frequencies) between &lt;script type=&quot;math/tex&quot;&gt;0 \leq k \leq N-1&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;\omega = 2\pi k/N&lt;/script&gt; and to get an expression for the DFT as
+&lt;p&gt;In practical computer applications, we do not use the DTFT (which has a continuous output) but instead use the DFT (which has a discrete output). For example, if we make our signal sample indices to be &lt;script type=&quot;math/tex&quot;&gt;0 \leq n \leq N-1&lt;/script&gt; and uniformly sample the continuous output &lt;script type=&quot;math/tex&quot;&gt;X(e^{j\omega})&lt;/script&gt; at N equally spaced index points (or frequencies) between &lt;script type=&quot;math/tex&quot;&gt;0 \leq k \leq N-1&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;\omega = 2\pi k/N&lt;/script&gt; and we get an expression for the DFT as
 $$ X[k] = \sum^{N-1}_{n=0}x[n]e^{-j\frac{2\pi kn}{N}} $$&lt;/p&gt;
 
 &lt;p&gt;Keep in mind that &lt;script type=&quot;math/tex&quot;&gt;X[k]&lt;/script&gt; is complex valued even when &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; is real valued.&lt;/p&gt;
@@ -87,10 +87,10 @@ $$ X[k] = \sum^{N-1}_{n=0}x[n]e^{-j\frac{2\pi kn}{N}} $$&lt;/p&gt;
 &lt;p&gt;Now, let’s continue with our experiments and figure out what would happen if we input a more general complex value into our LTI system? Let &lt;script type=&quot;math/tex&quot;&gt;x[n] = z^{n}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;z = re^{j\omega n}&lt;/script&gt;. This is a general complex exponential with a variable amplitude. Again, we exploit our knowledge of LTI systems and convolution to arrive at
 $$  z^{n} \rightarrow \boxed{LTI} \rightarrow \sum^{\infty}_{k=-\infty}h[k]z^{n-k} $$&lt;/p&gt;
 
-&lt;p&gt;Again, the right side output can be simplified to be
+&lt;p&gt;Again, we can simplify the right side to be
 $$  y[n] = z^{n} \sum^{\infty}_{k=-\infty}h[k]z^{-k} $$&lt;/p&gt;
 
-&lt;p&gt;Just like the previous experiment when we put in a complex exponential, we can see that the output is the input multiplied by a complex scaling term. We can express the output as
+&lt;p&gt;Just like the previous experiment when we put in a complex exponential, we can see that the output is just the input multiplied by a complex scaling term. We can express this output as
 $$  y[n] = z^{n}H(z) $$&lt;/p&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;H(z)&lt;/script&gt; is called the “transfer function” of the system. In general, the transfer function of a any signal &lt;script type=&quot;math/tex&quot;&gt;x[n]&lt;/script&gt; is computed by
@@ -205,7 +205,7 @@ Speaking of world-class musicians giving lessons. Check out &lt;a href=&quot;htt
 &lt;br /&gt;&lt;br /&gt;
 How many of you are composers? Growing up, I wanted to be a film composer. I loved the movies with scores from Jerry Goldsmith, John Williams, Ennio Morricone, James Newton Howard, Alan Silvestri, and so many more. I would drool at the magazine images of their studios - packed with synthesizers and gear. Nowadays, the equipment needed to compose for film, TV and games is more accessible. Most composers utilize sample libraries for mocking up scores or even delivering final music. One of my favorite sample library companies is &lt;a href=&quot;https://www.spitfireaudio.com&quot;&gt;Sptitfire Audio&lt;/a&gt; in the UK. The co-founder, &lt;a href=&quot;https://www.youtube.com/channel/UCXCXxhRVYvBOX45_gxr0iHA&quot;&gt;Christian Henson has a YouTube channel&lt;/a&gt; packed full of resources and advice for composers. Aside from being a very talented composer, Christian is a gifted teacher and a direct and honest person. You can find a mountain of inspiration from the long list of videos available on his channel.
 &lt;br /&gt;&lt;br /&gt;
-You may find that there is not enough time in the day to take advantage of all the resources available for learning to play music. For now, just pick something interesting and set aside some protected time for regular practice and learning. Find some other musicians that share your interest and priorities. You may need to look outside your existing social circle and make some new contacts. It will be fun! In a future post, I will dive deeper into some hot topics like Artificial Intelligence (AI) for composing. Until then…enjoy the music!&lt;/p&gt;
+You may find that there is not enough time in the day to take advantage of all the resources available for learning to play music. For now, just pick something interesting and set aside some protected time for regular practice and learning. Find some other musicians that share your interest and priorities. You may need to look outside your existing social circle and make some new contacts. It will be fun!&lt;/p&gt;
 
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/making-time-for-music/&quot;&gt;Making Time For Music&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 24, 2018.&lt;/p&gt;</content>
@@ -271,7 +271,7 @@ Using bat echo-location data, an experimental determination was made that &lt;sc
   &lt;li&gt;Don’t forget to download the code and bat signal data so you can try for yourself - &lt;a href=&quot;https://github.com/ohmdsp/TF-Bat-Signal-Analysis&quot;&gt;Code &amp;amp; Bat Data&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;em&gt;Thanks to Dr. Larry Marple Jr. for the introduction to time-frequency analysis back when I was in graduate school. You should check out his book on &lt;a href=&quot;https://www.amazon.com/Digital-Spectral-Analysis-Electrical-Engineering/dp/048678052X&quot;&gt;Spectral Analysis&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks to Dr. Larry Marple Jr. for the introduction to time-frequency analysis back when I was in graduate school. Please check out Larry’s well-known book on &lt;a href=&quot;https://www.amazon.com/Digital-Spectral-Analysis-Electrical-Engineering/dp/048678052X&quot;&gt;Spectral Analysis&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/time-frequency-analysis-of-nonstationary-signals/&quot;&gt;Time-Frequency Analysis of Non-Stationary Signals&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on January 22, 2017.&lt;/p&gt;</content>
 </entry>

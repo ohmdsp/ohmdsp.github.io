@@ -38,4 +38,4 @@ Try some of these parameter changes to explore what happens:
 * Don't forget to download the code and bat signal data so you can try for yourself - [Code & Bat Data](https://github.com/ohmdsp/TF-Bat-Signal-Analysis)
 
 
-*Thanks to Dr. Larry Marple Jr. for the introduction to time-frequency analysis back when I was in graduate school. You should check out his book on [Spectral Analysis](https://www.amazon.com/Digital-Spectral-Analysis-Electrical-Engineering/dp/048678052X)*
+*Thanks to Dr. Larry Marple Jr. for the introduction to time-frequency analysis back when I was in graduate school. Please check out Larry's well-known book on [Spectral Analysis](https://www.amazon.com/Digital-Spectral-Analysis-Electrical-Engineering/dp/048678052X)*
