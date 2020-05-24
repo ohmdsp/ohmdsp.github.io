@@ -12,8 +12,6 @@ links:
     url: /about
   - title: Blog
     url: /blog
-  - title: Projects
-    url: /projects
   - title: Papers
     url: /papers
   # - title: Talks
@@ -22,12 +20,15 @@ links:
 collections:
   papers:
     output: false # do not create html files for each paper in _papers
-
+  
 defaults:
   - scope:
       type: papers
     values:
-      layout: paper
+      layout: papers
+
+
+
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Denver
