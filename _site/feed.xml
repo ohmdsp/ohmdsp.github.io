@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2020-05-24T16:30:24-06:00</updated>
+<updated>2020-08-15T12:05:31-06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -15,19 +15,134 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Acoustic Array Signal Processing]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/acoustic-array/" />
-  <id>http://localhost:4000/acoustic-array</id>
-  <published>2019-10-29T00:00:00-06:00</published>
-  <updated>2019-10-29T00:00:00-06:00</updated>
+  <title type="html"><![CDATA[Fast Correlation]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/fast-correlation/" />
+  <id>http://localhost:4000/fast-correlation</id>
+  <published>2020-07-20T00:00:00-06:00</published>
+  <updated>2020-07-20T00:00:00-06:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">
+  <content type="html">&lt;p&gt;There are two methods for computing the correlation of complex-valued signals.  The first one is a time-domain method, and for a stationary process can be computed using the following formula&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/acoustic-array/&quot;&gt;Acoustic Array Signal Processing&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on October 29, 2019.&lt;/p&gt;</content>
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align*}
+r_{xh}(k) =
+\begin{cases}
+  \frac{1}{N} \sum^{N-k-1}_{n=0} x(n+k)h^{*}(n) &amp; 0 \leq k \leq N-1 \\
+  r^{*}_{xh}(-k) &amp; -(N-1) \leq k \lt 0\\
+  0 &amp; elsewhere\\
+
+\end{cases} 
+\end{align*} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where N is the input data record length, x(n) is the input data and h(n) is the kernel, or reference data.  The computational time to compute a correlation using this method is directly proportional to the number of samples in the kernel. Therefore, the longer the kernel data record the more time it takes to compute a correlation.&lt;/p&gt;
+
+&lt;p&gt;The second method for computing a correlation is a frequency domain method called “fast correlation”. Fast correlation uses the Fast Fourier Transform (FFT) to transform the input signal and the kernel signal into the frequency domain and then exploits the following mathematical relationship&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+x(n) \circledast h(n) = ifft \{X(k)*conj(Y(k))\} 
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;It is well known that when dealing with kernel lengths that are greater than about 60 samples it is faster, or more efficient, to use the fast correlation method.  To the fact that the time it takes to compute the fast correlation is proportional to the logarithm of the number of samples, and therefore, changes slowly as the kernel length increases.  Figure 1 shows a computation time comparison between the time-domain and fast correlation methods versus kernel length, or “impulse response length”.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/fastcorr_eff.png&quot; /&gt;
+	&lt;figcaption&gt;Figuer 1. Execution times for fast correlation compared to time-domain correlation [Steven W. Smith,DSP Guide].&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It is often useful to look at a pictorial representation of an algorithm.  A block diagram showing the processing steps involved in computing the fast correlation is shown in Figure 2. It is worth mentioning that fast correlation is also called “pulse compression” in the radar community.  Therefore, it should be no surprise to learn that many commercially available technologies, both hardware and software, are available to implement it.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/fastcorr_block.png&quot; /&gt;
+	&lt;figcaption&gt;Figuer 2. Block diagram showing the processing steps for computing frequency-domain correlation.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The most efficient way to implement fast correlation for very long input data sequences is to use the overlap “scrap” (OVS) algorithm, also known as the overlap-save algorithm. The overlap-save algorithm can be easily understood by looking at the sample sequences x and h in Figure 3. First, the input data sequence is broken up into arbitrary segments of length N. Then, each segment is processed using the fast correlation method discussed in the last section. However, special segment overlapping and data discarding rules must be by followed in order to avoid wrap-around pollution in the output sequence. We will not go into an analysis of wrap-around pollution in this report since most DSP textbooks cover it in detail. The OVS algorithm can be implemented by following these steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Zero pad the kernel out to the FFT length (N) to avoid wrap-around pollution&lt;/li&gt;
+  &lt;li&gt;Add M-1 zeros to the beginning of the input data and N-1 zeros to the end&lt;/li&gt;
+  &lt;li&gt;Break input signal into successive segments of N samples, each segment overlapping the previous segment by M-1 samples&lt;/li&gt;
+  &lt;li&gt;Compute the FFT of the kernel and complex conjugate (save for reuse)&lt;/li&gt;
+  &lt;li&gt;Buffer a segment of input signal and compute the FFT&lt;/li&gt;
+  &lt;li&gt;Multiply (element- wise) outputs from steps 4 and 5&lt;/li&gt;
+  &lt;li&gt;Compute the inverse FFT (IFFT) from output of multiply&lt;/li&gt;
+  &lt;li&gt;Last M-1 samples of each IFFT output are discarded, (front M-1 samples discarded from first output block)&lt;/li&gt;
+  &lt;li&gt;The remaining samples are used as output&lt;/li&gt;
+  &lt;li&gt;Steps 5-9 are repeated until all input segments used&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/corr_example.png&quot; /&gt;
+	&lt;figcaption&gt;Simple Overlap &quot;Scrap&quot; algorithm example.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/corr_matlab_plot.png&quot; /&gt;
+	&lt;figcaption&gt;Plots from simple example.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It is important to note that the last M-1 samples of each IFFT output should be discarded instead of the front M-1 samples. This will help in the implementation by avoiding double buffering at the output of the IFFT. Matlab code for simulating the OVS correlation algorithm is included below.&lt;/p&gt;
+
+&lt;p&gt;Usually we would consider the following factors when deciding the overlap amount for the OVS algorithm.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;FFT Accuracy – the numerical accuracy of fast correlation is dependent on the error introduced by the FFT and IFFT process. For floating point implementations this is usually negligible, but for fixed point processing, significant dynamic range can be lost when using larger transforms.&lt;/li&gt;
+  &lt;li&gt;Latency – the fast correlation process extends the group delay by at least N samples. So, the longer the FFT, the longer the latency.
+In the absence of a benchmark, an overlap factor of 4 to 8 is a good rule of thumb. Since we do not have a lot of flexibility when choosing a kernel size, we will need to choose the length of the FFT to give optimal performance.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Matlab Code&lt;/p&gt;
+
+&lt;p&gt;% Filename: overlap_scrap_corr.m &lt;br /&gt;
+% Author: drohm &lt;br /&gt;
+% &lt;br /&gt;
+% y = output sequence &lt;br /&gt;
+% x = input sequence &lt;br /&gt;
+% h = kernel sequence &lt;br /&gt;
+% N = segment length &amp;amp; fft length &lt;br /&gt;
+% Implements overlap-scrap (OVS) “overlap-save” correlation. &lt;br /&gt;
+%========================================================================== %========================================================================== 
+clear all;close all &lt;br /&gt;
+x1 = [zeros(1,128)+j*zeros(1,128)];   %Input Data &lt;br /&gt;
+h1 = [ 1 0 1 1 0 1];                  %Kernel&lt;br /&gt;
+Lenx = length(x1); M = length(h1); &lt;br /&gt;
+x1(25:25+M-1)=h1;                     %Embed Kernel into nput data&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;xp = [x1 zeros(1,length(h1)-1)];      %Zero Padded input sequence and Kernel&lt;br /&gt;
+hp = [h1 zeros(1,length(x1)-1)];&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;N=8; % Segment Size and FFT Size for OVS &lt;br /&gt;
+M1 = M-1; L = N-M1;&lt;br /&gt;
+h = [h1 zeros(1,N-M)];&lt;br /&gt;
+Leny = Lenx + M -1; %Length of final correlation output &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;x = [zeros(1,M-1), x1, zeros(1,N-1)];
+K = floor((Lenx+M1-1)/(L)); % # of segment sent to correlator&lt;br /&gt;
+Y = zeros(K+1,N); % Allocate output 2D array of zeros&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;%%%%% Correlator %%%%%&lt;br /&gt;
+% These steps perform the correlation using the FFT&lt;br /&gt;
+for k=0:K &lt;br /&gt;
+  xk = x(k&lt;em&gt;(N-(M-1))+1:k&lt;/em&gt;(N-(M-1))+N); % Input segments&lt;br /&gt;
+  Y(k+1,:) = ifft( (fft(xk,N).*conj(fft(h,N))),N ); % FFT Correlation&lt;br /&gt;
+end&lt;br /&gt;
+Y = Y(:,1:N-(M-1))’; %discard the last (M-1) samples&lt;br /&gt;
+y = (Y(:))’; % assemble output into 1D array&lt;br /&gt;
+y = (real(y(M-1:Leny))); %remove extra zeros at end&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;%%%%% Plotting %%%%%&lt;br /&gt;
+figure(1)&lt;br /&gt;
+subplot(4,1,1)&lt;br /&gt;
+stem(x1);title(‘Input Data’);ylim([0,2])&lt;br /&gt;
+subplot(4,1,2)&lt;br /&gt;
+stem(h1);title(‘Kernel Data’);ylim([0,2])&lt;br /&gt;
+subplot(4,1,3)&lt;br /&gt;
+stem(y);title(‘Output (OVS)’);ylim([0,5])&lt;br /&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/fast-correlation/&quot;&gt;Fast Correlation&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on July 20, 2020.&lt;/p&gt;</content>
 </entry>
 
 
@@ -156,26 +271,6 @@ This is meant to be a textbook, but it is short and very well written. I highly 
 
 
 <entry>
-  <title type="html"><![CDATA[Learning - Random Variables]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Random-Variables/" />
-  <id>http://localhost:4000/Random-Variables</id>
-  <published>2019-08-13T00:00:00-06:00</published>
-  <updated>2019-08-13T00:00:00-06:00</updated>
-  <author>
-    <name></name>
-    <uri>http://localhost:4000</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;Often, when the concept of a random variable is first introduced, it is tempting to make comparisons to the variables we learned about in high school Algebra. However, this can be a mistake that creates confusion for years to come. You see, a random variable is not a variable at all in the traditional sense. It is a function.&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;DRAFT - Unfinished. Stay Tuned…&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Random-Variables/&quot;&gt;Learning - Random Variables&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on August 13, 2019.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
   <title type="html"><![CDATA[Making Time For Music]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/making-time-for-music/" />
   <id>http://localhost:4000/making-time-for-music</id>
@@ -226,24 +321,6 @@ You may find that there is not enough time in the day to take advantage of all t
 
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/making-time-for-music/&quot;&gt;Making Time For Music&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 24, 2018.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Deep Learning with Radio Frequency Signals?]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/rf-machine-learning/" />
-  <id>http://localhost:4000/rf-machine-learning</id>
-  <published>2017-07-18T00:00:00-06:00</published>
-  <updated>2017-07-18T00:00:00-06:00</updated>
-  <author>
-    <name></name>
-    <uri>http://localhost:4000</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;Coming soon…&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/rf-machine-learning/&quot;&gt;Deep Learning with Radio Frequency Signals?&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on July 18, 2017.&lt;/p&gt;</content>
 </entry>
 
 
