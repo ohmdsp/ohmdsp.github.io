@@ -12,28 +12,19 @@ published: true
 There are two methods for computing the correlation of complex-valued signals.  The first one is a time-domain method, and for a stationary process can be computed using the following formula
 
 $$
-\begin{align*}
 r_{xh}(k) =
 \begin{cases}
   \frac{1}{N} \sum^{N-k-1}_{n=0} x(n+k)h^{*}(n) & 0 \leq k \leq N-1 \\
   r^{*}_{xh}(-k) & -(N-1) \leq k \lt 0\\
   0 & elsewhere\\
-
 \end{cases} 
-\end{align*}
 $$ 
-
 
 
 where N is the input data record length, x(n) is the input data and h(n) is the kernel, or reference data.  The computational time to compute a correlation using this method is directly proportional to the number of samples in the kernel. Therefore, the longer the kernel data record the more time it takes to compute a correlation.
 
 The second method for computing a correlation is a frequency domain method called “fast correlation”. Fast correlation uses the Fast Fourier Transform (FFT) to transform the input signal and the kernel signal into the frequency domain and then exploits the following mathematical relationship
-
-$$ 
-\begin{align*}
-x(n) \circledast h(n) = ifft \{X(k)*conj(Y(k))\} 
-\end{align*}
-$$
+\$$ x(n) \circledast h(n) = ifft \{X(k)*conj(Y(k))\} $$
 
 It is well known that when dealing with kernel lengths that are greater than about 60 samples it is faster, or more efficient, to use the fast correlation method.  To the fact that the time it takes to compute the fast correlation is proportional to the logarithm of the number of samples, and therefore, changes slowly as the kernel length increases.  Figure 1 shows a computation time comparison between the time-domain and fast correlation methods versus kernel length, or “impulse response length”.
 

@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2020-08-15T12:05:31-06:00</updated>
+<updated>2020-08-15T12:19:36-06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -28,23 +28,17 @@
   <content type="html">&lt;p&gt;There are two methods for computing the correlation of complex-valued signals.  The first one is a time-domain method, and for a stationary process can be computed using the following formula&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align*}
 r_{xh}(k) =
 \begin{cases}
   \frac{1}{N} \sum^{N-k-1}_{n=0} x(n+k)h^{*}(n) &amp; 0 \leq k \leq N-1 \\
   r^{*}_{xh}(-k) &amp; -(N-1) \leq k \lt 0\\
   0 &amp; elsewhere\\
-
-\end{cases} 
-\end{align*} %]]&gt;&lt;/script&gt;
+\end{cases} %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;where N is the input data record length, x(n) is the input data and h(n) is the kernel, or reference data.  The computational time to compute a correlation using this method is directly proportional to the number of samples in the kernel. Therefore, the longer the kernel data record the more time it takes to compute a correlation.&lt;/p&gt;
 
-&lt;p&gt;The second method for computing a correlation is a frequency domain method called “fast correlation”. Fast correlation uses the Fast Fourier Transform (FFT) to transform the input signal and the kernel signal into the frequency domain and then exploits the following mathematical relationship&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
-x(n) \circledast h(n) = ifft \{X(k)*conj(Y(k))\} 
-\end{align*}&lt;/script&gt;
+&lt;p&gt;The second method for computing a correlation is a frequency domain method called “fast correlation”. Fast correlation uses the Fast Fourier Transform (FFT) to transform the input signal and the kernel signal into the frequency domain and then exploits the following mathematical relationship
+$$ x(n) \circledast h(n) = ifft {X(k)*conj(Y(k))} $$&lt;/p&gt;
 
 &lt;p&gt;It is well known that when dealing with kernel lengths that are greater than about 60 samples it is faster, or more efficient, to use the fast correlation method.  To the fact that the time it takes to compute the fast correlation is proportional to the logarithm of the number of samples, and therefore, changes slowly as the kernel length increases.  Figure 1 shows a computation time comparison between the time-domain and fast correlation methods versus kernel length, or “impulse response length”.&lt;/p&gt;
 
