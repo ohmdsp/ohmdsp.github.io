@@ -1,12 +1,12 @@
 ---
 layout: post-light-feature
 title: Fast Correlation
-description: "The most efficient way to implement fast correlation for very long input data sequences is to use the overlap “scrap” (OVS) algorithm, also known as the overlap-save algorithm."
+description: "An efficient way to implement correlation for very long input data sequences."
 category: articles
 tags: [engineer, correlation, signal processing, FFT, convolution, fourier transform]
 image:
   feature: signals.jpg
-  thumb: signals.jpg
+  thumb: fast_corr_thumb.jpg
 published: true
 ---
 There are two methods for computing the correlation of complex-valued signals.  The first one is a time-domain method, and for a stationary process can be computed using the following formula
@@ -19,7 +19,6 @@ r_{xh}(k) =
   0 & elsewhere\\
 \end{cases} 
 $$ 
-
 
 where N is the input data record length, x(n) is the input data and h(n) is the kernel, or reference data.  The computational time to compute a correlation using this method is directly proportional to the number of samples in the kernel. Therefore, the longer the kernel data record the more time it takes to compute a correlation.
 

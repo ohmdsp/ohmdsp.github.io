@@ -6,6 +6,10 @@
 
     
     <url>
+        <loc>http://localhost:4000/Physics-Videos/</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/fast-correlation/</loc>
     </url>
     
@@ -15,6 +19,10 @@
     
     <url>
         <loc>http://localhost:4000/Ongoing-Reading-List/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/rf-machine-learning/</loc>
     </url>
     
     <url>

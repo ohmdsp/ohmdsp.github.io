@@ -5,13 +5,79 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2020-08-15T12:19:36-06:00</updated>
+<updated>2020-08-16T21:37:25-06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
   <uri>http://localhost:4000/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Physics and Engineering Video Recomendataions]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/Physics-Videos/" />
+  <id>http://localhost:4000/Physics-Videos</id>
+  <published>2020-08-16T00:00:00-06:00</published>
+  <updated>2020-08-16T00:00:00-06:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Maxwells Demon&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/Tay3-2WKQ5Y&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Arrow of Time&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/N7sEqMoSMqk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Maxwells Demon - Relativity&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/c1gxyKMw8Oo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;General Thermodynamics&lt;/strong&gt; (Watch at 2X speed)&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/GOrWy_yNBvY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Carno Cycle&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/s3N_QJVucF8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quantum Tunneling&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/cV2fkDscwvY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bose Einstein Condensation&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/shdLjIkRaS8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Physics-Videos/&quot;&gt;Physics and Engineering Video Recomendataions&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on August 16, 2020.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -243,24 +309,91 @@ $$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$&lt;/p&gt;
   </author>
   <content type="html">&lt;p&gt;This is my list of reading suggestions based on what I have found educational and enjoyable. I will continue to update the list as I discover more treasures.
 &lt;br /&gt;&lt;br /&gt;
- &lt;strong&gt;Seven Brief Lessons on Physics&lt;/strong&gt;, by Carlo Rovelli &lt;br /&gt;
- This is a well-written book that is both educational and enjoyable. It is a short book, so it can be read in a weekend. &lt;br /&gt;
- &lt;strong&gt;Reality Is Not What It Seems: The Journey to Quantum Gravity&lt;/strong&gt;, by Carlo Rovelli&lt;br /&gt;
- I really enjoyed the background material and physics history presented in this book. It felt like a fresh approach, and the historical connections were very enlightening. The later sections of the book dealing with quantum loop gravity were interesting but less informative than other sections, in my opinion. During one chapter, there is an awkward attempt made to discuss God and religion, which seems hard to resist for physics writers even though it is surely surely outside their expertise. In summary, this book is worth owning and possibly reading a couple times. &lt;br /&gt;
- &lt;strong&gt;The Signal And The Noise&lt;/strong&gt;, by Nate Silver &lt;br /&gt;
- This book is packed with information and stories related to statistical analysis of world events, weather patterns, natural disasters, markets, gambling, etc. I found it to be too wordy throughout so I skimmed through some sections in order to stay interested. However, it is worth reading if you want to know about statistical prediction applied to many different modern history events. If you want to learn about the actual math behind statistical prediction, you will need to get a different book. The sections on games of chance are very interesting.&lt;br /&gt;
- &lt;strong&gt;The Theoretical Minimum&lt;/strong&gt;, by Leonard Susskind &lt;br /&gt;
- This is a good book for brushing up on your basic physics. I put it in my re-read list since it never hurts to go over it again. I am looking forward to reading and studying Dr. Susskind’s other books on quantum mechanics and relativity. If you have already read Feynman’s Lectures on Physics, then this is a good next step. &lt;br /&gt;
- &lt;strong&gt;Thinking Fast and Slow&lt;/strong&gt;, by Daniel Kahneman &lt;br /&gt;
- If you like psychology and the study of human decision making, you will likely enjoy this book. I did not find it to be a quick read and for me, it required several weeks to digest piece-by-piece. At times, the book feels like a random assortment of stories and studies, so don’t expect an organized narrative. There is a lot of interesting information about human thinking and decision bias presented in the book. It will have you re-evaluating some of your decision making skills.&lt;br /&gt;
-&lt;strong&gt;The Radioactive Boy Scout&lt;/strong&gt;, by Ken Silverstein &lt;br /&gt;
-I loved this short book! The story is both inspiring and sad. The book presents a lot of general information about radioactivity and physics in an easy-to-read manner. I highly recommend this book to anyone interested in physics or chemistry. It is a great book to share with your teenage son or daughter.&lt;br /&gt;
-&lt;strong&gt;Feynman’s Lectures On Physics&lt;/strong&gt;, by Richard Feynman &lt;br /&gt;
-I recently revisited these lectures for some self-study. I was reminded how good they are. I will admit, than sometimes the conversations get long and wordy, but Dr. Feynman’s thought process is enlightening. Plan to spend many weeks, maybe months, reading/studying these lectures.&lt;br /&gt;
-&lt;strong&gt;Digital Communications&lt;/strong&gt;, by Andy Bateman &lt;br /&gt;
-This is meant to be a textbook, but it is short and very well written. I highly recommend this book to any systems engineers looking to get a high-level overview on digital communications. The graphics are also very good.&lt;br /&gt;&lt;/p&gt;
+ &lt;strong&gt;1. Seven Brief Lessons on Physics&lt;/strong&gt;, by Carlo Rovelli &lt;br /&gt;
+ This is a well-written book that is both educational and enjoyable. It is a short book, so it can be read in a weekend. &lt;br /&gt;&lt;br /&gt;
+ &lt;strong&gt;2. Reality Is Not What It Seems: The Journey to Quantum Gravity&lt;/strong&gt;, by Carlo Rovelli&lt;br /&gt;
+ I really enjoyed the background material and physics history presented in this book. It felt like a fresh approach, and the historical connections were very enlightening. The later sections of the book dealing with quantum loop gravity were interesting but less informative than other sections, in my opinion. During one chapter, there is an awkward attempt made to discuss God and religion, which seems hard to resist for physics writers even though it is surely surely outside their expertise. In summary, this book is worth owning and possibly reading a couple times. &lt;br /&gt;&lt;br /&gt;
+ &lt;strong&gt;3. The Signal And The Noise&lt;/strong&gt;, by Nate Silver &lt;br /&gt;
+ This book is packed with information and stories related to statistical analysis of world events, weather patterns, natural disasters, markets, gambling, etc. I found it to be too wordy throughout so I skimmed through some sections in order to stay interested. However, it is worth reading if you want to know about statistical prediction applied to many different modern history events. If you want to learn about the actual math behind statistical prediction, you will need to get a different book. The sections on games of chance are very interesting.&lt;br /&gt;&lt;br /&gt;
+ &lt;strong&gt;4. The Theoretical Minimum&lt;/strong&gt;, by Leonard Susskind &lt;br /&gt;
+ This is a good book for brushing up on your basic physics. I put it in my re-read list since it never hurts to go over it again. I am looking forward to reading and studying Dr. Susskind’s other books on quantum mechanics and relativity. If you have already read Feynman’s Lectures on Physics, then this is a good next step. &lt;br /&gt;&lt;br /&gt;
+ &lt;strong&gt;5. Thinking Fast and Slow&lt;/strong&gt;, by Daniel Kahneman &lt;br /&gt;
+ If you like psychology and the study of human decision making, you will likely enjoy this book. I did not find it to be a quick read and for me, it required several weeks to digest piece-by-piece. At times, the book feels like a random assortment of stories and studies, so don’t expect an organized narrative. There is a lot of interesting information about human thinking and decision bias presented in the book. It will have you re-evaluating some of your decision making skills.&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;6. The Radioactive Boy Scout&lt;/strong&gt;, by Ken Silverstein &lt;br /&gt;
+I loved this short book! The story is both inspiring and sad. The book presents a lot of general information about radioactivity and physics in an easy-to-read manner. I highly recommend this book to anyone interested in physics or chemistry. It is a great book to share with your teenage son or daughter.&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;7. Feynman’s Lectures On Physics&lt;/strong&gt;, by Richard Feynman &lt;br /&gt;
+I recently revisited these lectures for some self-study. I was reminded how good they are. I will admit, than sometimes the conversations get long and wordy, but Dr. Feynman’s thought process is enlightening. Plan to spend many weeks, maybe months, reading/studying these lectures.&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;8. Digital Communications&lt;/strong&gt;, by Andy Bateman &lt;br /&gt;
+This is meant to be a textbook, but it is short and very well written. I highly recommend this book to any systems engineers looking to get a high-level overview on digital communications. The graphics are also very good.&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;9. The Perfectionists&lt;/strong&gt;, by Simon Winchester &lt;br /&gt;
+A wonderful book about engineering and precision. I really loved the historical aspect of this book along with stories of engineering.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Ongoing-Reading-List/&quot;&gt;My Reading Recommendations&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 21, 2019.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Deep Learning with Radio Frequency Signals Part I]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/rf-machine-learning/" />
+  <id>http://localhost:4000/rf-machine-learning</id>
+  <published>2017-07-18T00:00:00-06:00</published>
+  <updated>2017-07-18T00:00:00-06:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;strong&gt;Signal Classification Using Spectrograms and Deep Learning&lt;/strong&gt;&lt;br /&gt;
+In this post, I will introduce some basic methods for utilizing a Convolutional Neural Network (CNN) to process spectrograms created from Radio Frequency (RF) data. The information in the post was taken from tutorial my colleagues and I provided to NVidia Corporation in early 2015 that has been used in their enterprise training series for several years. This post links you to a git project that removes the dependency on Nvidia’s DIGITS platform and uses only Keras and Tensorflow.
+&lt;a href=&quot;https://github.com/ohmdsp/mldsd&quot;&gt;Project Code &amp;amp; Data&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Introduction to signal detection&lt;/strong&gt;&lt;br /&gt;
+When monitoring radio frequency (RF) signals, or similar signals from sensors such as biomedical, temperature, etc., we are often interested in detecting certain signal “markers” or features. This can become a challenging problem when the signal-of-interest is degraded by noise. Traditional signal detection methods use a range of techniques such as energy detection, matched filtering, or other correlation-based processing techniques.&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/images/dsd_conf.png&quot; style=&quot;width:420px;height:420px;&quot; /&gt;
+	&lt;figcaption&gt;Figure 1. Signal classification confusion matrix.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Short-duration radio frequency (RF) events can be especially challenging to detect, since the useful data length is limited and long integration times are not possible. Weak signals that are short in duration are some of the most difficult to reliably detect (or even find). I will walk you through a simple approach using a Convolutional Neural Network (CNN) to tackle the traditional signal processing problem of detecting RF signals in noise.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A little background information&lt;/strong&gt;&lt;br /&gt;
+Signal detection theory often assumes that a signal is corupted with additive white Gaussian noise (AWGN). This type of noise is common in the real world and the assumption makes mathematical analysis tractable. The detection of a signal in noise depends on the signal duration, amplitude, and the corresponding noise process. This becomes more difficult if correlated noise, or interfering signals, are also in the same band as the signal you wish to detect.&lt;/p&gt;
+
+&lt;p&gt;In this tutorial, we will assume no a-priori information about the parameters for the signal-of-interest. As input to the Convolutional Neural Network, we will utilize spectrograms computed from simulated Radio Frequency (RF) data using a common Fast Fourier Transform (FFT) based method. Taking the input data into the frequency domain as time-frequency grams, which are 2D representations just like images, allows us to visualize the energy of a signal over some pre-determined time duration and frequency bandwidth.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/dsd_2.png&quot; style=&quot;width:320px;height:320px;&quot; /&gt;
+	&lt;figcaption&gt;Figure 2. Multiple signals and noise (x-axis is time, y-axis is frequency).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;The difficulty with real-world signals&lt;/strong&gt;&lt;br /&gt;
+For a single sinusoid in AWGN, finding the frequency bin with the maximum amplitude is a method for estimating signal frequency in a spectrogram. But real-world signals are often more complex, with frequency components that change with time, and creating a generalized signal detection algorithm becomes difficult. In this tutorial, we will look at one of these types of signals - Linear Frequency-Modulated (LFM) signals. In a follow-on tutorial we will explore Frequency-Hopped (FH) signals and multi-signal detection scenarios.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Linear Frequency-Modulated Signals&lt;/strong&gt;&lt;br /&gt;
+A linear frequency-modulated (LFM), or chirp, signal is a signal that ramps up or down in frequency over some time frame. Its frequency changes with time based on its chirp rate. Chirps are used in many different systems for frequency response measurements and timing. RADAR systems use chirp signals due to the inherent large time-bandwith product available with coherent processing. Another common use is for automatic room equalization in home theater receivers, since chirps can excite a large frequency swath quickly. Chirps can also be used as “pilot” signals to denote the start of an incoming transmission, and more. Figure 3 shows a high-SNR chirp as seen in a grayscale spectrogram (the format we will be using). Since the spectrogram consists of real numbers all &amp;gt; 0, we can map it to an image file by scaling the values appropriately. So we only need a single grayscale image channel. In this plot, the x axis is time and the y axis is frequency. Brightness is proportional to signal power.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/dsd_1.png&quot; style=&quot;width:320px;height:320px;&quot; /&gt; 
+	&lt;figcaption&gt;Figure 3. High-SNR chip spectrogram (grayscale).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/dsd_3.png&quot; style=&quot;width:320px;height:320px;&quot; /&gt;
+	&lt;figcaption&gt;Figure 4. Weak chirp embedded in noise with other signals (x-axis is time, y-axis is frequency).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Give it a try&lt;/strong&gt;&lt;br /&gt;
+You can try using deep learning yourself by following the link to my git page at the top of this post. There you will find a jupiter notebook. Modify the paths to point to the images of your time-frequency grams or reach out to me on LinkedIn and I will send you a dataset to use. When you are done you should have a trained model for classifying/detecting “chirps”, “CW”, and “Hopped” signal types. You can see a sample of my output results in Figure 5 below. Have fun!&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/dsd_4.png&quot; style=&quot;width:420px;&quot; /&gt;
+	&lt;figcaption&gt;Figure 5. Example results from signal classifier.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/rf-machine-learning/&quot;&gt;Deep Learning with Radio Frequency Signals Part I&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on July 18, 2017.&lt;/p&gt;</content>
 </entry>
 
 
@@ -268,8 +401,8 @@ This is meant to be a textbook, but it is short and very well written. I highly 
   <title type="html"><![CDATA[Making Time For Music]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/making-time-for-music/" />
   <id>http://localhost:4000/making-time-for-music</id>
-  <published>2018-09-24T00:00:00-06:00</published>
-  <updated>2018-09-24T00:00:00-06:00</updated>
+  <published>2017-04-24T00:00:00-06:00</published>
+  <updated>2017-04-24T00:00:00-06:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000</uri>
@@ -297,7 +430,7 @@ Make sure you wander outside the forums and learn about interesting musicians. T
 &lt;p&gt;Booker T. Jones is best known for his band Booker T and The MG’s. He was 17 years old when he recorded “Green Onions.” If you have not taken the time to learn to play Green Onions, I highly recommend it. Not only is it a fun song to play solo, it is a great song to jam with a band. This NPR Tiny Desk concert is amazing for its simplicity and for providing a pure look at the playing style of Booker T.&lt;/p&gt;
 
 &lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe src=&quot;https://www.youtube.com/embed/rh9KDzNkpSI&quot; width=&quot;700&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/rh9KDzNkpSI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -314,7 +447,7 @@ How many of you are composers? Growing up, I wanted to be a film composer. I lov
 You may find that there is not enough time in the day to take advantage of all the resources available for learning to play music. For now, just pick something interesting and set aside some protected time for regular practice and learning. Find some other musicians that share your interest and priorities. You may need to look outside your existing social circle and make some new contacts. It will be fun!&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/making-time-for-music/&quot;&gt;Making Time For Music&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 24, 2018.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/making-time-for-music/&quot;&gt;Making Time For Music&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on April 24, 2017.&lt;/p&gt;</content>
 </entry>
 
 

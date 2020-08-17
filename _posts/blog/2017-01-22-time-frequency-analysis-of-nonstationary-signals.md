@@ -1,7 +1,7 @@
 ---
 layout: post-light-feature
 title: Time-Frequency Analysis of Non-Stationary Signals
-#description: "How to compute a time-frequency representation of a non-stationary signal for analysis."
+description: "How to compute a time-frequency representation of a non-stationary signal for analysis."
 category: articles
 tags: [signal processing, DSP, FFT, signal analysis, machine learning, Fourier Transform ]
 image:
