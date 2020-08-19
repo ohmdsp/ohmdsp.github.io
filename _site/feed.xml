@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2020-08-16T21:37:25-06:00</updated>
+<updated>2020-08-19T09:08:38-06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -109,14 +109,14 @@ $$ x(n) \circledast h(n) = ifft {X(k)*conj(Y(k))} $$&lt;/p&gt;
 &lt;p&gt;It is well known that when dealing with kernel lengths that are greater than about 60 samples it is faster, or more efficient, to use the fast correlation method.  To the fact that the time it takes to compute the fast correlation is proportional to the logarithm of the number of samples, and therefore, changes slowly as the kernel length increases.  Figure 1 shows a computation time comparison between the time-domain and fast correlation methods versus kernel length, or “impulse response length”.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/images/fastcorr_eff.png&quot; /&gt;
+	&lt;img src=&quot;/images/fastcorr_eff.png&quot; style=&quot;width:460px;height:320px;&quot; /&gt;
 	&lt;figcaption&gt;Figuer 1. Execution times for fast correlation compared to time-domain correlation [Steven W. Smith,DSP Guide].&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;It is often useful to look at a pictorial representation of an algorithm.  A block diagram showing the processing steps involved in computing the fast correlation is shown in Figure 2. It is worth mentioning that fast correlation is also called “pulse compression” in the radar community.  Therefore, it should be no surprise to learn that many commercially available technologies, both hardware and software, are available to implement it.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/images/fastcorr_block.png&quot; /&gt;
+	&lt;img src=&quot;/images/fastcorr_block.png&quot; style=&quot;width:640px;height:320px;&quot; /&gt;
 	&lt;figcaption&gt;Figuer 2. Block diagram showing the processing steps for computing frequency-domain correlation.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -136,12 +136,12 @@ $$ x(n) \circledast h(n) = ifft {X(k)*conj(Y(k))} $$&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/images/corr_example.png&quot; /&gt;
+	&lt;img src=&quot;/images/corr_example.png&quot; style=&quot;width:540px;height:220px;&quot; /&gt;
 	&lt;figcaption&gt;Simple Overlap &quot;Scrap&quot; algorithm example.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/images/corr_matlab_plot.png&quot; /&gt;
+	&lt;img src=&quot;/images/corr_matlab_plot.png&quot; style=&quot;width:540px;height:320px;&quot; /&gt;
 	&lt;figcaption&gt;Plots from simple example.&lt;/figcaption&gt;
 &lt;/figure&gt;
 

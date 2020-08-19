@@ -28,14 +28,14 @@ The second method for computing a correlation is a frequency domain method calle
 It is well known that when dealing with kernel lengths that are greater than about 60 samples it is faster, or more efficient, to use the fast correlation method.  To the fact that the time it takes to compute the fast correlation is proportional to the logarithm of the number of samples, and therefore, changes slowly as the kernel length increases.  Figure 1 shows a computation time comparison between the time-domain and fast correlation methods versus kernel length, or “impulse response length”.
 
 <figure>
-	<img src="/images/fastcorr_eff.png">
+	<img src="/images/fastcorr_eff.png" style="width:460px;height:320px;">
 	<figcaption>Figuer 1. Execution times for fast correlation compared to time-domain correlation [Steven W. Smith,DSP Guide].</figcaption>
 </figure>
 
 It is often useful to look at a pictorial representation of an algorithm.  A block diagram showing the processing steps involved in computing the fast correlation is shown in Figure 2. It is worth mentioning that fast correlation is also called “pulse compression” in the radar community.  Therefore, it should be no surprise to learn that many commercially available technologies, both hardware and software, are available to implement it.  
 
 <figure>
-	<img src="/images/fastcorr_block.png">
+	<img src="/images/fastcorr_block.png" style="width:640px;height:320px;">
 	<figcaption>Figuer 2. Block diagram showing the processing steps for computing frequency-domain correlation.</figcaption>
 </figure>
 
@@ -54,12 +54,12 @@ The most efficient way to implement fast correlation for very long input data se
 
 
 <figure>
-	<img src="/images/corr_example.png">
+	<img src="/images/corr_example.png" style="width:540px;height:220px;">
 	<figcaption>Simple Overlap "Scrap" algorithm example.</figcaption>
 </figure>
 
 <figure>
-	<img src="/images/corr_matlab_plot.png">
+	<img src="/images/corr_matlab_plot.png" style="width:540px;height:320px;">
 	<figcaption>Plots from simple example.</figcaption>
 </figure>
 
