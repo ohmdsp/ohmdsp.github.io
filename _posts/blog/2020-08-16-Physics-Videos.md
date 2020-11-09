@@ -1,7 +1,7 @@
 ---
 layout: post-light-feature
 title: Physics and Engineering Video Recomendataions
-description: "A list of online video suggestions to excite the mind."
+description: "My list of YouTube video suggestions to excite the mind and kill your time. You might learn something too."
 category: articles
 tags: [engineering, science, signal processing, reading, mathematics, articles]
 image:
@@ -10,6 +10,34 @@ image:
 published: true
 ---
 
+<br>
+
+__Grain Bins and Soy Bean Farming__
+ <div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/embed/ywBV6M7VOFU"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      width="560"
+      height="315"
+      frameborder="0"
+      allowfullscreen>
+  </iframe>
+</div>
+<br>
+
+__Heard Immunity (Sabine H. has become one of my favorite physics channels)__
+ <div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/embed/NENhBmN_tps"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      width="560"
+      height="315"
+      frameborder="0"
+      allowfullscreen>
+  </iframe>
+</div>
 <br>
 
 __Maxwells Demon__
@@ -110,3 +138,32 @@ __Bose Einstein Condensation__
   </iframe>
 </div>
 <br>
+
+__Quantum Signal Processing__
+ <div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/embed/RuPnuW3SYXs"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      width="560"
+      height="315"
+      frameborder="0"
+      allowfullscreen>
+  </iframe>
+</div>
+<br>
+
+__Torque and Gyroscopic Motion__
+ <div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/embed/XPUuF_dECVI"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      width="560"
+      height="315"
+      frameborder="0"
+      allowfullscreen>
+  </iframe>
+</div>
+<br>
+

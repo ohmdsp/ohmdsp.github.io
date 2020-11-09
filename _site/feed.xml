@@ -5,13 +5,35 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2020-08-19T09:08:38-06:00</updated>
+<updated>2020-11-09T15:14:41-07:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
   <uri>http://localhost:4000/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Covid in Colorado]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/Colorado-Covid/" />
+  <id>http://localhost:4000/Colorado-Covid</id>
+  <published>2020-11-09T00:00:00-07:00</published>
+  <updated>2020-11-09T00:00:00-07:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;The Covid pandemic has certainly captured the focus of 2020. Earlier this year we all made adjustments to almost every aspect of our lives. I cannot recall the last time I attended church, sat down to a meal at a resturant, or worked an entire day at the office without wearing a mask. I would not say the difficulty compares to other more severe difficulties people have faced thorughout history, but it has been different. &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;We are told we are in another wave of the pandemic, and the data suggests the number of positive cases has risen dramatically (see banner from Nov. 9th, 2020). Since nothing like this has happened before, there is no solid science to base decisions and judgements on. After all, science requires emperical data from past experiments that match the current situation and that is just not available. So, science is in the making along with many opportunities for policy decisions. What will Colorado decide to do in the weeks ahead. I will be curious to learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Colorado-Covid/&quot;&gt;Covid in Colorado&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on November 09, 2020.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -26,6 +48,20 @@
     <email></email>
   </author>
   <content type="html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Grain Bins and Soy Bean Farming&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/ywBV6M7VOFU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Heard Immunity (Sabine H. has become one of my favorite physics channels)&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/NENhBmN_tps&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Maxwells Demon&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;embed-container&quot;&gt;
@@ -75,6 +111,21 @@
   &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quantum Signal Processing&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/RuPnuW3SYXs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Torque and Gyroscopic Motion&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/XPUuF_dECVI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; width=&quot;560&quot; height=&quot;315&quot; allowfullscreen=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Physics-Videos/&quot;&gt;Physics and Engineering Video Recomendataions&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on August 16, 2020.&lt;/p&gt;</content>
 </entry>
@@ -307,7 +358,7 @@ $$ X(z) = \sum^{\infty}_{n=-\infty}x[n]z^{n} $$&lt;/p&gt;
     <uri>http://localhost:4000</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;This is my list of reading suggestions based on what I have found educational and enjoyable. I will continue to update the list as I discover more treasures.
+  <content type="html">&lt;p&gt;This is my list of technical reading suggestions based on what I have found educational and enjoyable. I will continue to update the list as I discover more treasures.
 &lt;br /&gt;&lt;br /&gt;
  &lt;strong&gt;1. Seven Brief Lessons on Physics&lt;/strong&gt;, by Carlo Rovelli &lt;br /&gt;
  This is a well-written book that is both educational and enjoyable. It is a short book, so it can be read in a weekend. &lt;br /&gt;&lt;br /&gt;
@@ -326,7 +377,17 @@ I recently revisited these lectures for some self-study. I was reminded how good
 &lt;strong&gt;8. Digital Communications&lt;/strong&gt;, by Andy Bateman &lt;br /&gt;
 This is meant to be a textbook, but it is short and very well written. I highly recommend this book to any systems engineers looking to get a high-level overview on digital communications. The graphics are also very good.&lt;br /&gt;&lt;br /&gt;
 &lt;strong&gt;9. The Perfectionists&lt;/strong&gt;, by Simon Winchester &lt;br /&gt;
-A wonderful book about engineering and precision. I really loved the historical aspect of this book along with stories of engineering.&lt;/p&gt;
+A wonderful book about engineering and precision. I really loved the historical aspect of this book along with stories of engineering. &lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;10. Astrophysics for People in a Hurry&lt;/strong&gt;, by Neil DeGrasse Tyson &lt;br /&gt;
+An informative quick read perfect for a Sunday afternoon. This book contains simple descriptions of important discoveries and concepts around the Cosmic Background Radiation, Dark Matter, Dark Energy, etc. This would be a good book to share with a young student. &lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;11. Vibrations and Waves in Physis&lt;/strong&gt;, by Iian G. Main &lt;br /&gt;
+This book is actually intended as a short textbook for a physics course. However, it is perfect for self-study or refreshing knowlege from your undergraduate physics courses. Keep in mind that a solid understanding of basic physics and differential equations is needed to get the most out of this book. &lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;12. Feynman Lectures On Computation&lt;/strong&gt;, by Richard Feynman&lt;br /&gt;
+This is a fantastic book and a great addition to the lectures listed above. Consider this book a complete introduction to logic operations, encoding and the physics of computation. A book worth reading multiple times. &lt;br /&gt; &lt;br /&gt; 
+&lt;strong&gt;13. The Perfectionists&lt;/strong&gt;, by Simon Winchester&lt;br /&gt;
+Although I found the first few chapters of this book to be a little boring and slow, the last several chapters are wonderful and insightful. If you have an interest in the history of navigation, time keeping and how modern scientific measurements have influenced our lives, this book is worth the time to read. &lt;br /&gt; &lt;br /&gt; 
+&lt;strong&gt;14. The Stars&lt;/strong&gt;, by H.A.Rey&lt;br /&gt;
+This book is amazing! Yes, it is written by author of the many popular Curious George books. If you have any interest in the stars and celestial mechanics, you need this book. The drawings and diagrams are incredibly insightful. The sections on the celestial sphere, orbits and the seasons are easy to read and understand. Buy this book!&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Ongoing-Reading-List/&quot;&gt;My Reading Recommendations&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 21, 2019.&lt;/p&gt;</content>
 </entry>

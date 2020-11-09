@@ -10,7 +10,7 @@ image:
 published: true
 ---
 
-This is my list of reading suggestions based on what I have found educational and enjoyable. I will continue to update the list as I discover more treasures.
+This is my list of technical reading suggestions based on what I have found educational and enjoyable. I will continue to update the list as I discover more treasures.
 <br><br>
  __1. Seven Brief Lessons on Physics__, by Carlo Rovelli <br>
  This is a well-written book that is both educational and enjoyable. It is a short book, so it can be read in a weekend. <br><br>
@@ -29,4 +29,14 @@ I recently revisited these lectures for some self-study. I was reminded how good
 __8. Digital Communications__, by Andy Bateman <br>
 This is meant to be a textbook, but it is short and very well written. I highly recommend this book to any systems engineers looking to get a high-level overview on digital communications. The graphics are also very good.<br><br>
 __9. The Perfectionists__, by Simon Winchester <br>
-A wonderful book about engineering and precision. I really loved the historical aspect of this book along with stories of engineering.
+A wonderful book about engineering and precision. I really loved the historical aspect of this book along with stories of engineering. <br><br>
+__10. Astrophysics for People in a Hurry__, by Neil DeGrasse Tyson <br>
+An informative quick read perfect for a Sunday afternoon. This book contains simple descriptions of important discoveries and concepts around the Cosmic Background Radiation, Dark Matter, Dark Energy, etc. This would be a good book to share with a young student. <br><br>
+__11. Vibrations and Waves in Physis__, by Iian G. Main <br>
+This book is actually intended as a short textbook for a physics course. However, it is perfect for self-study or refreshing knowlege from your undergraduate physics courses. Keep in mind that a solid understanding of basic physics and differential equations is needed to get the most out of this book. <br><br>
+__12. Feynman Lectures On Computation__, by Richard Feynman<br>
+This is a fantastic book and a great addition to the lectures listed above. Consider this book a complete introduction to logic operations, encoding and the physics of computation. A book worth reading multiple times. <br> <br> 
+__13. The Perfectionists__, by Simon Winchester<br>
+Although I found the first few chapters of this book to be a little boring and slow, the last several chapters are wonderful and insightful. If you have an interest in the history of navigation, time keeping and how modern scientific measurements have influenced our lives, this book is worth the time to read. <br> <br> 
+__14. The Stars__, by H.A.Rey<br>
+This book is amazing! Yes, it is written by author of the many popular Curious George books. If you have any interest in the stars and celestial mechanics, you need this book. The drawings and diagrams are incredibly insightful. The sections on the celestial sphere, orbits and the seasons are easy to read and understand. Buy this book!<br> <br> 

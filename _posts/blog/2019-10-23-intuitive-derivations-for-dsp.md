@@ -1,7 +1,7 @@
 ---
 layout: post-light-feature
 title: Intuitive Derivations In DSP
-description: "Discovering the transforms for digital signal processing."
+description: "Discovering the transforms used for digital signal processing."
 category: articles
 tags: [engineer, scientist, signal processing, DFT, convolution, fourier transform]
 image:
