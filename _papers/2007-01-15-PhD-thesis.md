@@ -6,6 +6,6 @@ venue: PhD Dissertation
 year: 2007
 author: David Ohm
 link: https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/nk322j51j
-pdf: Thesis_ohm.pdf
+pdf: Thesis_Ohm.pdf
 thumb: physics_cropped.jpg
 ---
