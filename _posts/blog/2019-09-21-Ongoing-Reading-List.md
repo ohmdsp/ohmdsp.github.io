@@ -42,3 +42,9 @@ __14. The Stars__, by H.A.Rey<br>
 This book is amazing! Yes, it is written by author of the many popular Curious George books. If you have any interest in the stars and celestial mechanics, you need this book. The drawings and diagrams are incredibly insightful. The sections on the celestial sphere, orbits and the seasons are easy to read and understand. Buy this book!<br> <br>
 __15. Ultralearning__, by James Young<br>
 An interesting book with some insightful stories and lessong about people that have mastered a topic or skill thorugh intense effort combined with ability. Like many books written around self imrpovement, some sections are repedetive and too verbose. However, it is not difficult to quickly scan these sections. Worth a quick read if you are interested in learning a something challenging and are not sure how to start.  <br> <br>
+__16. On Tyranny__, by Timothy Snyder<br>
+A short read with some interesting insights and historical information regariding fascism and communist tyranny. The author spends too much time comparing the outcome of the 2016 election and president elect to the rise of fascism, but when he stays on topic the reading is insightful. I recommend this book for the historical information only. <br><br>
+__17. Ice Age__, by John and Mary Gribbin<br>
+If you are interested in the scientific theories and experiments developed over the past century in order to better understand the long term history of Earth's climate, then you will enjoy this book. <br><br>
+__18. How To Fly A Horse__, by Kevin Ashton<br>
+A fun book about the history of invention and discovery. Some chapters will be more interesting than others depending on your interests and background. 
