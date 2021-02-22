@@ -52,3 +52,5 @@ __19. Chasing the Demon__, by Dan Hampton<br>
 An interesting book about aviation history and the milestones that led up to flying faster than the speed of sound. The book also includes some interesting photographs from the post WWII era when secret flight tests were being made in the US. <br><br>
 __20. Rocket Billionaires__, by Tim Fernholz<br>
 I really enjoyed this book. It includes a readable history of the various commercial space companies led by the well-known billionaires of today. The stories about SpaceX alone are worth the price of the book. Reading this book actually increased my interest in the modern commercial space race and the companies involved. <br><br>
+__21. Zero to One__, by Peter Thiel<br>
+In my opinion, the best startup book out there. Read it! <br><br>
