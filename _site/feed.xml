@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2021-02-06T16:16:26-07:00</updated>
+<updated>2021-02-28T09:22:03-07:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
@@ -399,7 +399,9 @@ A fun book about the history of invention and discovery. Some chapters will be m
 &lt;strong&gt;19. Chasing the Demon&lt;/strong&gt;, by Dan Hampton&lt;br /&gt;
 An interesting book about aviation history and the milestones that led up to flying faster than the speed of sound. The book also includes some interesting photographs from the post WWII era when secret flight tests were being made in the US. &lt;br /&gt;&lt;br /&gt;
 &lt;strong&gt;20. Rocket Billionaires&lt;/strong&gt;, by Tim Fernholz&lt;br /&gt;
-I really enjoyed this book. It includes a readable history of the various commercial space companies led by the well-known billionaires of today. The stories about SpaceX alone are worth the price of the book. Reading this book actually increased my interest in the modern commercial space race and the companies involved. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+I really enjoyed this book. It includes a readable history of the various commercial space companies led by the well-known billionaires of today. The stories about SpaceX alone are worth the price of the book. Reading this book actually increased my interest in the modern commercial space race and the companies involved. &lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;21. Zero to One&lt;/strong&gt;, by Peter Thiel&lt;br /&gt;
+In my opinion, the best startup book out there. Read it! &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Ongoing-Reading-List/&quot;&gt;My Reading Recommendations&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on September 21, 2019.&lt;/p&gt;</content>
 </entry>
@@ -417,7 +419,7 @@ I really enjoyed this book. It includes a readable history of the various commer
     <email></email>
   </author>
   <content type="html">&lt;p&gt;&lt;strong&gt;Signal Classification Using Spectrograms and Deep Learning&lt;/strong&gt;&lt;br /&gt;
-In this post, I will introduce some basic methods for utilizing a Convolutional Neural Network (CNN) to process spectrograms created from Radio Frequency (RF) data. The information in the post was taken from tutorial my colleagues and I provided to NVidia Corporation in early 2015 that has been used in their enterprise training series for several years. This post links you to a git project that removes the dependency on Nvidia’s DIGITS platform and uses only Keras and Tensorflow.
+In this post, I will introduce some basic methods for utilizing a Convolutional Neural Network (CNN) to process spectrograms created from Radio Frequency (RF) data. The information in the post was taken from a tutorial my colleagues and I provided to NVidia Corporation in early 2015 that has been used in their enterprise training series for several years. This post links you to a git project that removes the dependency on Nvidia’s DIGITS platform and uses only Keras and Tensorflow.
 &lt;a href=&quot;https://github.com/ohmdsp/mldsd&quot;&gt;Project Code &amp;amp; Data&lt;/a&gt;
 &lt;br /&gt;&lt;/p&gt;
 

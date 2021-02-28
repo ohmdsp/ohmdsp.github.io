@@ -11,7 +11,7 @@ published: true
 ---
 
 __Signal Classification Using Spectrograms and Deep Learning__<br>
-In this post, I will introduce some basic methods for utilizing a Convolutional Neural Network (CNN) to process spectrograms created from Radio Frequency (RF) data. The information in the post was taken from tutorial my colleagues and I provided to NVidia Corporation in early 2015 that has been used in their enterprise training series for several years. This post links you to a git project that removes the dependency on Nvidia's DIGITS platform and uses only Keras and Tensorflow.
+In this post, I will introduce some basic methods for utilizing a Convolutional Neural Network (CNN) to process spectrograms created from Radio Frequency (RF) data. The information in the post was taken from a tutorial my colleagues and I provided to NVidia Corporation in early 2015 that has been used in their enterprise training series for several years. This post links you to a git project that removes the dependency on Nvidia's DIGITS platform and uses only Keras and Tensorflow.
 [Project Code & Data](https://github.com/ohmdsp/mldsd)
 <br>
 

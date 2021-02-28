@@ -1,5 +1,5 @@
 ---
-blurb: Paper introducing a method for fast correlation called overlap-scrap.
+blurb: Paper demonstrating the method for fast correlation called overlap-scrap.
 title: Fast Correlation Processing
 venue: Internal report
 year: 2005

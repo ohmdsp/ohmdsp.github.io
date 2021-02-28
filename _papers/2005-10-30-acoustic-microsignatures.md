@@ -5,7 +5,7 @@ venue: Asilomar Signals and Systems Conference
 year: 2005
 author: David Ohm
 link: https://ieeexplore.ieee.org/document/1600025
-code: https://github.com/ohmdsp/
-pdf: Asilomar_OhmMarple_Final.pdf
+#code: https://github.com/ohmdsp/
+#pdf: Asilomar_OhmMarple_Final.pdf
 thumb: physics_cropped.jpg
 ---
