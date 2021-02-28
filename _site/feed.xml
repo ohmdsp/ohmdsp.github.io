@@ -5,13 +5,114 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2021-02-28T09:22:03-07:00</updated>
+<updated>2021-02-28T14:19:15-07:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name></name>
   <uri>http://localhost:4000/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Complex Envelope]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/complex-envelope/" />
+  <id>http://localhost:4000/complex-envelope</id>
+  <published>2021-01-16T00:00:00-07:00</published>
+  <updated>2021-01-16T00:00:00-07:00</updated>
+  <author>
+    <name></name>
+    <uri>http://localhost:4000</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;There are two common methods in the literature for mathematically describing
+narrowband signals. Both of these methods will be encountered in the popular signal processing, digital communications,
+and radar signal processing books. &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First approach:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s start with a simple real-valued sinusoidal signal with a time-dependent amplitude and phase. This can be expressed by&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x_{c}(t) = a(t)cos(2\pi f_{0} t + \theta(t) ) .&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;We can rewrite this expression using Eulers Formula to be&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{aligned}
+x_{c}(t) &amp;= \Re \left\{ a(t) \exp(j [2\pi f_{0} t + \theta(t)])  \right\} \\
+&amp; = \Re \left\{ a(t) \exp(j 2\pi f_{0} t) \exp(j \theta(t))  \right\}  .
+\end{aligned}
+\end{equation} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s simplify this a little by splitting out the amplitude and phase components and assigning it to&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{aligned}
+\tilde{x}_{c}(t) &amp;= a(t) \exp(j \theta(t)) .
+\end{aligned}
+\end{equation} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, we can rewrite our expression for &lt;script type=&quot;math/tex&quot;&gt;x_{c}(t)&lt;/script&gt; as&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{aligned}
+x_{c}(t) &amp;= \Re \left\{ \tilde{x}_{c}(t) \exp(j 2\pi f_{0} t)  \right\} .
+\end{aligned}
+\end{equation} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that &lt;script type=&quot;math/tex&quot;&gt;\tilde{x}_{c}(t)&lt;/script&gt; contains both the amplitude and phase information for &lt;script type=&quot;math/tex&quot;&gt;x_{c}(t)&lt;/script&gt;, and is
+referred to as the “complex envelope” of &lt;script type=&quot;math/tex&quot;&gt;x_{c}(t)&lt;/script&gt;. &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Second approach:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second appraoch for describing our signal start with expanding our original expression using a trigonametric identity. This give us&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{aligned}
+x_{c}(t) &amp;= a(t)cos(2\pi f_{0}t + \theta(t) ) \\
+&amp; =  a(t)cos(2\pi f_{0}t)cos(\theta(t)) - a(t)sin(2\pi f_{0}t)sin(\theta(t)) .
+\end{aligned}
+\end{equation} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, we will simplify using some assignments for the amplitude and phase components.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{aligned}
+x_{ci}(t) &amp;= a(t)cos(\theta(t))\\
+x_{cq}(t) &amp;= a(t)sin(\theta(t)) .
+\end{aligned}
+\end{equation} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;These are called the “in-phase” and “qaudrature” components of the signal, respectively. A final expression for our signal is then found to be&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{aligned}
+x_{c}(t) &amp;=  x_{ci}(t)cos(2\pi f_{0}t) - x_{cq}(t)sin(2\pi f_{0}t).
+\end{aligned}
+\end{equation} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Clearly, the represenations from the first and second approaches are related by&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{aligned}
+\tilde{x}_{c}(t) &amp;= x_{ci}(t) + j x_{cq}(t)
+\end{aligned}
+\end{equation} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The in-phase and quadrature components are, respectfully, the real and imaginary parts of the complex envelope &lt;script type=&quot;math/tex&quot;&gt;\tilde{x}_{c}(t)&lt;/script&gt;.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/complex-envelope/&quot;&gt;Complex Envelope&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;David Ohm, PhD&lt;/a&gt; on January 16, 2021.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

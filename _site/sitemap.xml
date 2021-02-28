@@ -6,6 +6,10 @@
 
     
     <url>
+        <loc>http://localhost:4000/complex-envelope/</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/Colorado-Covid/</loc>
     </url>
     
