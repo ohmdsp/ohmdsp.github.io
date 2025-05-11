@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://arberiatheme.netlify.app/</loc>
+    <loc>/</loc>
     <lastmod>2024-10-15T20:58:53+02:00</lastmod>
   </url><url>
-    <loc>https://arberiatheme.netlify.app/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://arberiatheme.netlify.app/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
