@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Arberia Theme </title>
+		<title>OhmDSP Site </title>
 		<link>https://ohmdsp.github.io/</link>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<author></author>
-		<rights>Copyright (c) 2020</rights>
-		<updated>2020-10-15 20:58:53 &#43;0200 &#43;0200</updated>
+		<rights>Copyright (c) 2024</rights>
+		<updated>2024-10-15 20:58:53 &#43;0200 &#43;0200</updated>
 		
 	</channel>
 </rss>
