@@ -5,6 +5,19 @@ $$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$&lt;/p&gt;
 &lt;p&gt;In this simple diagram, the output function $h[n]$ is called the &amp;ldquo;impulse response&amp;rdquo; of the system.&lt;/p&gt;</description></item><item><title>Time-Frequency Analysis of Non-Stationary Signals</title><link>https://ohmdsp.github.io/time-frequency-analysis-of-non-stationary-signals/</link><pubDate>Mon, 19 Apr 2021 19:57:40 +0800</pubDate><guid>https://ohmdsp.github.io/time-frequency-analysis-of-non-stationary-signals/</guid><description>&lt;p&gt;Check out the &lt;a href="https://github.com/ohmdsp/TF-Bat-Signal-Analysis"&gt;Matlab demo code&lt;/a&gt; to explore time-frequency analysis using a Bat signal&amp;hellip;not the super-hero one.&lt;/p&gt;
 &lt;p&gt;Often, the examples provided in our signal processing textbooks assume that the signal we are working with is wide-sense-stationary. This means that the first and second order statistics (mean and correlation) do not change with shifts in time. Although, all of our statistical signal processing techniques depend upon this statistical behavior in order to produce meaningful characterizations when analyzing a random signal, many real-world signals don&amp;rsquo;t have nonstationary characteristics. A bat echo-location signal is just one example.&lt;/p&gt;</description></item><item><title>Fun Physics and Engineering Videos</title><link>https://ohmdsp.github.io/fun-physics-and-engineering-videos/</link><pubDate>Wed, 16 Sep 2020 19:57:40 +0800</pubDate><guid>https://ohmdsp.github.io/fun-physics-and-engineering-videos/</guid><description>&lt;p&gt;There are more than a handful of fascinating physics and engineering related videos on YouTube. I&amp;rsquo;m sharing a list of my favorites here. It also helps me keep track of these videos over time. I will try to update regularly.
 &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Laplace Transform&lt;/strong&gt;&lt;/p&gt;
+ &lt;div class="embed-container"&gt;
+ &lt;iframe
+ src="https://www.youtube.com/watch?v=j0wJBEZdwLs&amp;t=145s"
+ frameborder="0"
+ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+ width="560"
+ height="315"
+ frameborder="0"
+ allowfullscreen&gt;
+ &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;br&gt;
 &lt;p&gt;&lt;strong&gt;Grain Bins and Soy Bean Farming&lt;/strong&gt;&lt;/p&gt;
  &lt;div class="embed-container"&gt;
  &lt;iframe
@@ -18,19 +31,6 @@ $$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$&lt;/p&gt;
  &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;br&gt;
-&lt;p&gt;&lt;strong&gt;Heard Immunity (Sabine H. has become one of my favorite physics channels)&lt;/strong&gt;&lt;/p&gt;
- &lt;div class="embed-container"&gt;
- &lt;iframe
- src="https://www.youtube.com/embed/NENhBmN_tps"
- frameborder="0"
- allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
- width="560"
- height="315"
- frameborder="0"
- allowfullscreen&gt;
- &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;Maxwells Demon&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Deep Learning with Radio Frequency Signals</title><link>https://ohmdsp.github.io/deep-learning-with-radio-frequency-signals/</link><pubDate>Wed, 16 Mar 2016 19:57:40 +0800</pubDate><guid>https://ohmdsp.github.io/deep-learning-with-radio-frequency-signals/</guid><description>&lt;p&gt;&lt;strong&gt;Signal Classification Using Spectrograms and Deep Learning&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;Heard Immunity (Sabine H. has become one of my favorite physics channels)&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Deep Learning with Radio Frequency Signals</title><link>https://ohmdsp.github.io/deep-learning-with-radio-frequency-signals/</link><pubDate>Wed, 16 Mar 2016 19:57:40 +0800</pubDate><guid>https://ohmdsp.github.io/deep-learning-with-radio-frequency-signals/</guid><description>&lt;p&gt;&lt;strong&gt;Signal Classification Using Spectrograms and Deep Learning&lt;/strong&gt;
 In this post, I will introduce some basic methods for utilizing a Convolutional Neural Network (CNN) to process spectrograms created from Radio Frequency (RF) data. The information in the post was taken from a tutorial my colleagues and I provided to NVidia Corporation in early 2015 that has been used in their enterprise training series for several years. This post links you to a git project that removes the dependency on Nvidia&amp;rsquo;s DIGITS platform and uses only Keras and Tensorflow.
 &lt;a href="https://github.com/ohmdsp/mldsd"&gt;Project Code &amp;amp; Data&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
