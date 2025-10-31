@@ -10,15 +10,7 @@ $$ \delta[n] \rightarrow \boxed{LTI} \rightarrow h[n] $$&lt;/p&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Laplace Transform&lt;/strong&gt;&lt;/p&gt;
  &lt;div class="embed-container"&gt;
- &lt;iframe
- src="https://www.youtube.com/watch?v=j0wJBEZdwLs&amp;t=145s"
- frameborder="0"
- allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
- width="560"
- height="315"
- frameborder="0"
- allowfullscreen&gt;
- &lt;/iframe&gt;
+ &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/j0wJBEZdwLs?si=FtT2_efiHoJascji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;Grain Bins and Soy Bean Farming&lt;/strong&gt;&lt;/p&gt;
