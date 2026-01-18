@@ -8,14 +8,14 @@
 <a class="badge badge-light text-muted" href=../tags/dsp/>DSP</a>
 <span class="ml-2 fa fa-tags" aria-hidden=true></span>
 <a class="badge badge-light text-muted" href=../tags/z-transform/>Z-Transform</a></span></p></div></div><p>There are two common methods in the literature for mathematically describing
-narrowband signals. Both of these methods will be encountered in the popular signal processing, digital communications,
-and radar signal processing books.<br></p><p><strong>First approach:</strong><br></p><p>Let&rsquo;s start with a simple real-valued sinusoidal signal with a time-dependent amplitude and phase. This can be expressed by</p><p>$$ x_{c}(t) = a(t)cos(2\pi f_{0} t + \theta(t) ) .$$</p><p>We can rewrite this expression using Eulers Formula to be</p><p>$$
+narrowband signals. Both of these methods will be encountered in popular signal processing, digital communications,
+and radar signal processing books.<br></p><p><strong>First approach:</strong><br></p><p>Let&rsquo;s start with a simple real-valued sinusoidal signal with a time-dependent amplitude and phase. This can be expressed by</p><p>$$ x_{c}(t) = a(t)cos(2\pi f_{0} t + \theta(t) ) .$$</p><p>We can rewrite this expression using Euler&rsquo;s Formula to be</p><p>$$
 x_{c}(t) = \Re \left[ a(t) \exp(j [2\pi f_{0} t + \theta(t)]) \right] \
 = \Re \left[ a(t) \exp(j 2\pi f_{0} t) \exp(j \theta(t)) \right] .
 $$</p><p>Let&rsquo;s simplify this a little by splitting out the amplitude and phase components and assigning it to</p><p>$$ \tilde{x}_{c}(t) = a(t) \exp(j \theta(t)) .$$</p><p>Then, we can rewrite our expression for $x_{c}(t)$ as</p><p>$$
 x_{c}(t) = \Re \left[ \tilde{x_{c}}(t) \exp(j 2\pi f_{0} t) \right] .
 $$</p><p>Note that $\tilde{x_{c}}(t)$ contains both the amplitude and phase information for $x_{c}(t)$, and is
-referred to as the &ldquo;complex envelope&rdquo; of $x_{c}(t)$.</p><p><strong>Second approach:</strong></p><p>The second appraoch for describing our signal start with expanding our original expression using a trigonametric identity. This give us</p><p>$$
+referred to as the &ldquo;complex envelope&rdquo; of $x_{c}(t)$.</p><p><strong>Second approach:</strong></p><p>The second approach for describing our signal start with expanding our original expression using a trigonometric identity. This gives us</p><p>$$
 x_{c}(t) = a(t)cos(2\pi f_{0}t + \theta(t) )
 $$</p><p>$$
 x_{c}(t) = a(t)cos(2\pi f_{0}t)cos(\theta(t)) - a(t)sin(2\pi f_{0}t)sin(\theta(t)) .
@@ -32,11 +32,11 @@ $$</p><p>These are called the &ldquo;in-phase&rdquo; and &ldquo;qaudrature&rdquo
 x_{c}(t) &= x_{ci}(t)cos(2\pi f_{0}t) - x_{cq}(t)sin(2\pi f_{0}t).
 \end{aligned}
 \end{equation}
-$$</p><p><strong>Summary:</strong></p><p>Clearly, the represenations from the first and second approaches are related by</p><p>$$
+$$</p><p><strong>Summary:</strong></p><p>Clearly, the representations from the first and second approaches are related by</p><p>$$
 \begin{equation}
 \begin{aligned}
-\tilde{x_{c}}(t) &= x_{ci}(t) + j x_{cq}(t)
+\tilde{x}<em>{c}(t) &= x</em>{ci}(t) + j x_{cq}(t)
 \end{aligned}
 \end{equation}
-$$</p><p>The in-phase and quadrature components are, respectfully, the real and imaginary parts of the complex envelope $\tilde{x_{c}}(t)$.</p></div></div></div></div><footer class=footer><div class=container><p class="small text-center text-muted w-75 mx-auto">&copy 2012–2026 OhmDSP Site&nbsp;⋅
+$$</p><p>The in-phase and quadrature components are, respectively, the real and imaginary parts of the complex envelope $\tilde{x}_{c}(t)$.</p></div></div></div></div><footer class=footer><div class=container><p class="small text-center text-muted w-75 mx-auto">&copy 2012–2026 OhmDSP Site&nbsp;⋅
 <a href=../contact>Contact</a>&nbsp;</div></footer><script type=text/javascript src=../lib/jquery/jquery.js></script><script type=text/javascript src=../lib/popper/popper.js></script><script type=text/javascript src=../lib/bootstrap/js/bootstrap.min.js></script><script type=text/javascript src=../lib/lightbox/js/lightbox.js></script><script>var lightboxDescription,lightboxVideo,lightboxInlineIframe,lightbox=GLightbox();lightbox.on("open",e=>{console.log("lightbox opened")}),lightboxDescription=GLightbox({selector:".glightbox2"}),lightboxVideo=GLightbox({selector:".glightbox3"}),lightboxVideo.on("slide_changed",({prev:e,current:t})=>{console.log("Prev slide",e),console.log("Current slide",t);const{slideIndex:s,slideNode:o,slideConfig:i,player:n}=t;n&&(n.ready||n.on("ready",e=>{}),n.on("play",e=>{console.log("Started play")}),n.on("volumechange",e=>{console.log("Volume change")}),n.on("ended",e=>{console.log("Video ended")}))}),lightboxInlineIframe=GLightbox({selector:".glightbox4"})</script><script type=text/javascript src=../lib/back-to-top/vanilla-back-to-top.min.js></script><script>addBackToTop({diameter:56,backgroundColor:"rgb(255, 82, 82)",textColor:"#fff"})</script></body></html>
