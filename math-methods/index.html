@@ -1,0 +1,66 @@
+<!doctype html><html lang=en-us><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"><meta charset=utf-8><meta name=generator content="Hugo 0.151.0 with Arberia theme"><title>OhmDSP Site | Math Methods</title><link rel=canonical href=http://localhost:1313/math-methods/><meta name=description content="A draft review focused on the analytic signal, Hilbert transform, and complex-envelope interpretation."><meta name=author content><meta name=keywords content><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"Math Methods","datePublished":"2026-08-01T00:00:00Z","dateModified":"2026-08-01T00:00:00Z","url":"http://localhost:1313/math-methods/","description":"A draft review focused on the analytic signal, Hilbert transform, and complex-envelope interpretation.","keywords":["Math Methods","Analytic Signal","Hilbert Transform","Signal Processing","DSP"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:1313/"},"publisher":{"@type":"Organization","name":"OhmDSP Site","url":"http://localhost:1313/"}}</script><link rel=icon href=../favicon/favicon.ico><link rel=icon type=image/png sizes=16x16 href=../favicon/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=../favicon/favicon-32x32.png><link rel=apple-touch-icon href=../favicon/apple-touch-icon.png><link rel=mask-icon href=../favicon/safari-pinned-tab.svg><link rel=manifest href=../site.webmanifest><meta name=theme-color content="/"><meta name=msapplication-TileColor content="/"><link rel=stylesheet type=text/css href=../lib/bootstrap/css/bootstrap.min.css><link rel=stylesheet type=text/css href=../lib/lightbox/css/lightbox.css><link rel=stylesheet type=text/css href=../font-awesome-4.7.0/css/font-awesome.min.css><link rel=stylesheet type=text/css href=../gfonts/font.css><link rel=stylesheet href=http://localhost:1313/main.min.78701b7cd174c13c0eca20ec69c974b688499eeb0a0e0a34366510b6aa595679.css><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"],processHtmlClass:"mathjax",ignoreHtmlClass:"no-mathjax"}}</script><script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></head><body><nav class="navbar fixed-top navbar-expand-lg navbar-dark flex-column"><div class="container flex-row"><style>.navbar-brand{color:#fff!important;font-weight:700!important}</style><button class="navbar-toggler mr-3" type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse navbar-nav-scroll" id=navbarSupportedContent role=navigation aria-label="Main Navigation"><ul class="navbar-nav mr-5 flex-fill"><li class=nav-item><a class=nav-link href=../posts/>OhmDSP Blog</a></li><li class=nav-item><a class=nav-link href=../about/>About</a></li></ul><div class="collapse navbar-collapse navbar-nav-scroll" id=navbarSupportedContent role=navigation aria-label="Main Navigation"><div class="d-block d-lg-none"><ul class=navbar-nav><li class=nav-item><a class=nav-link href=../search title=Search><span class="d-block d-lg-none"><i class="fa fa-search" aria-hidden=true></i> Search</span><span class="d-none d-lg-block"><i class="fa fa-search" aria-hidden=true></i></span></a></li></ul></div><div class="d-none d-lg-flex align-items-center mr-2 flex-fill"><form class="form-inline ml-0" action=../search method=GET target=_self><a class="js-search-form-submit position-absolute" href=../search title=Search><i class="fa fa-search fa-fw text-muted pl-2" aria-hidden=true></i></a>
+<input id=search-by class="search-field form-control form-control-md mr-sm-1 mr-lg-2 w-100" style=padding-left:2rem maxlength=50 data-search-input type=search placeholder=Search aria-label=Search name=q>
+<input type=hidden name=_from value=nav></form></div></div></div></nav><div class="container main-content"><div class="row justify-content-center"><div class="col-md-11 col-lg-10 col-xl-9 article"><div class="article-body page-body"><h1 class=text-center id=post-title>Math Methods<a class=headerlink href=../math-methods/ title="Permanent link"></a></h1><p class="text-center text-muted">Analytic signal review notes</p><div class="row mb-1"><div class="col-2 col-md-1 p-0 ml-3 align-self-center"><a href><img src class="rounded-circle img-fluid w-100" sizes=10vw alt></a></div><div class="col pr-0 d-flex align-items-center"><p><span class=text-muted><span class=mr-2><a class=text-muted href target=_blank></a></span><br><span class="fa fa-clock-o"></span> <time>Aug 1, 2026</time>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/math-methods/>Math Methods</a>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/analytic-signal/>Analytic Signal</a>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/hilbert-transform/>Hilbert Transform</a>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/signal-processing/>Signal Processing</a>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/dsp/>DSP</a></span></p></div></div><div class="bg-light sidebar-module sidebar-module-inset" id=toc><p class="h3 mb-2 text-muted">Table of Contents</p><div class=toc></div></div><p>This post is the start of a review series on math methods that repeatedly show up in physics and electrical engineering. The goal is not to present every theorem in full generality, but to build a practical map of the tools that help us model systems, analyze measurements, and solve engineering problems.</p><p>This draft focuses only on one topic: the analytic signal. The analytic-signal view is central in communications, radar, controls, and physics-based signal analysis because it separates amplitude and phase behavior in a mathematically clean way.</p><h2 id=real-signal-and-its-analytic-counterpart>Real signal and its analytic counterpart</h2><p>Let $x(t)$ be a real-valued signal. Its analytic signal is defined as</p><p>$$
+x_a(t) = x(t) + j\hat{x}(t),
+$$</p><p>where $\hat{x}(t)$ is the Hilbert transform of $x(t)$.</p><p>In the frequency domain,</p><p>$$
+X_a(f) = 2U(f)X(f),
+$$</p><p>where $U(f)$ is the unit-step function in frequency:</p><p>$$
+U(f) =
+\begin{cases}
+1, & f > 0, \
+\frac{1}{2}, & f = 0, \
+0, & f &lt; 0.
+\end{cases}
+$$</p><p>So the analytic signal keeps only positive-frequency content (with DC handled by the half-weight convention).</p><h2 id=hilbert-transform-pair>Hilbert transform pair</h2><p>The Hilbert transform is</p><p>$$
+\hat{x}(t) = \mathcal{H}{x(t)}
+= \frac{1}{\pi},\mathrm{p.v.}!\int_{-\infty}^{\infty}\frac{x(\tau)}{t-\tau},d\tau.
+$$</p><p>Equivalent frequency-domain form:</p><p>$$
+\hat{X}(f) = -j,\operatorname{sgn}(f),X(f),
+$$</p><p>with</p><p>$$
+\operatorname{sgn}(f) =
+\begin{cases}
+1, & f > 0, \
+0, & f = 0, \
+-1, & f &lt; 0.
+\end{cases}
+$$</p><p>Hence</p><p>$$
+X_a(f) = X(f) + j\hat{X}(f)
+= X(f) + \operatorname{sgn}(f)X(f)
+= 2U(f)X(f).
+$$</p><h2 id=magnitude-and-phase-representation>Magnitude and phase representation</h2><p>Write the analytic signal in polar form:</p><p>$$
+x_a(t) = A(t)e^{j\phi(t)}.
+$$</p><p>Then</p><p>$$
+A(t) = |x_a(t)| = \sqrt{x^2(t) + \hat{x}^2(t)},
+$$</p><p>and</p><p>$$
+\phi(t) = \arg{x_a(t)}.
+$$</p><p>The original real signal is recovered by taking the real part:</p><p>$$
+x(t) = \Re{x_a(t)} = A(t)\cos\phi(t).
+$$</p><h2 id=instantaneous-frequency>Instantaneous frequency</h2><p>When phase is unwrapped and differentiable, instantaneous frequency is</p><p>$$
+f_i(t) = \frac{1}{2\pi}\frac{d\phi(t)}{dt}.
+$$</p><p>This is useful for nonstationary and narrowband signals where local frequency content evolves over time.</p><h2 id=connection-to-complex-envelope>Connection to complex envelope</h2><p>For a bandpass signal centered near $f_c$, define</p><p>$$
+x_a(t) = \tilde{x}(t)e^{j2\pi f_c t},
+$$</p><p>where $\tilde{x}(t)$ is the complex envelope (complex baseband). Therefore,</p><p>$$
+ilde{x}(t) = x_a(t)e^{-j2\pi f_c t}.
+$$</p><p>If we write</p><p>$$
+ilde{x}(t)=x_I(t)+jx_Q(t),
+$$</p><p>then the real passband signal can be written as</p><p>$$
+x(t)=x_I(t)\cos(2\pi f_c t)-x_Q(t)\sin(2\pi f_c t).
+$$</p><p>This decomposition is the standard I/Q representation used throughout communication and radar systems.</p><h2 id=short-derivation-for-a-cosine>Short derivation for a cosine</h2><p>Let</p><p>$$
+x(t)=\cos(2\pi f_0 t).
+$$</p><p>Its Hilbert transform is</p><p>$$
+\hat{x}(t)=\sin(2\pi f_0 t).
+$$</p><p>Therefore,</p><p>$$
+x_a(t)=\cos(2\pi f_0 t)+j\sin(2\pi f_0 t)=e^{j2\pi f_0 t},
+$$</p><p>which has only a positive-frequency spectral line. This is the simplest example showing why the analytic signal is called analytic in frequency construction.</p><h2 id=practical-notes>Practical notes</h2><ol><li>The analytic-signal interpretation is strongest for narrowband or monocomponent signals.</li><li>For multicomponent signals, instantaneous phase and frequency can become ambiguous.</li><li>In sampled systems, Hilbert transforms are approximated with FIR/IIR filters or FFT-domain constructions.</li><li>Edge effects and phase unwrapping errors can bias envelope and instantaneous-frequency estimates.</li></ol><h2 id=closing>Closing</h2><p>This post is a focused analytic-signal review draft in LaTeX form so equations can be edited directly. I will continue refining notation and examples as I align this write-up with the full notes.</p></div></div></div></div><footer class=footer><div class=container><p class="small text-center text-muted w-75 mx-auto">&copy 2012–2026 OhmDSP Site&nbsp;⋅
+<a href=../contact>Contact</a>&nbsp;</div></footer><script type=text/javascript src=../lib/jquery/jquery.js></script><script type=text/javascript src=../lib/popper/popper.js></script><script type=text/javascript src=../lib/bootstrap/js/bootstrap.min.js></script><script type=text/javascript src=../lib/lightbox/js/lightbox.js></script><script>var lightboxDescription,lightboxVideo,lightboxInlineIframe,lightbox=GLightbox();lightbox.on("open",e=>{console.log("lightbox opened")}),lightboxDescription=GLightbox({selector:".glightbox2"}),lightboxVideo=GLightbox({selector:".glightbox3"}),lightboxVideo.on("slide_changed",({prev:e,current:t})=>{console.log("Prev slide",e),console.log("Current slide",t);const{slideIndex:s,slideNode:o,slideConfig:i,player:n}=t;n&&(n.ready||n.on("ready",e=>{}),n.on("play",e=>{console.log("Started play")}),n.on("volumechange",e=>{console.log("Volume change")}),n.on("ended",e=>{console.log("Video ended")}))}),lightboxInlineIframe=GLightbox({selector:".glightbox4"})</script><script type=text/javascript src=../lib/back-to-top/vanilla-back-to-top.min.js></script><script>addBackToTop({diameter:56,backgroundColor:"rgb(255, 82, 82)",textColor:"#fff"})</script></body></html>

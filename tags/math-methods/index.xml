@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math Methods on OhmDSP Site</title><link>https://ohmdsp.github.io/tags/math-methods/</link><description>Recent content in Math Methods on OhmDSP Site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ohmdsp.github.io/tags/math-methods/index.xml" rel="self" type="application/rss+xml"/><item><title>The Analytic Signal</title><link>https://ohmdsp.github.io/the-analytic-signal/</link><pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate><guid>https://ohmdsp.github.io/the-analytic-signal/</guid><description>&lt;p&gt;This post focuses on the analytic signal. The analytic-signal view is central
+in communications, radar, controls, and physics-based signal analysis
+because it separates amplitude and phase behavior in a mathematically clean
+way. The word &amp;ldquo;analytic&amp;rdquo; here is not a coincidence of terminology — it&amp;rsquo;s the
+same complex-analysis concept from a math methods course, applied on the
+time axis instead of the spatial or complex-variable axis it&amp;rsquo;s usually
+introduced with. This post builds the signal-processing machinery first,
+then closes the loop back to complex analysis to show why the name fits.&lt;/p&gt;</description></item></channel></rss>

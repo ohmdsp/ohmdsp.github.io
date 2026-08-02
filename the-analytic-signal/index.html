@@ -1,0 +1,155 @@
+<!doctype html><html lang=en-us><head><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"><meta charset=utf-8><meta name=generator content="Hugo 0.151.0 with Arberia theme"><title>OhmDSP Site | The Analytic Signal</title><link rel=canonical href=https://ohmdsp.github.io/the-analytic-signal/><meta name=description content="Connecting the concept of an analytic signal to physics math methods."><meta name=author content><meta name=keywords content><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"The Analytic Signal","datePublished":"2026-08-01T00:00:00Z","dateModified":"2026-08-01T00:00:00Z","url":"https://ohmdsp.github.io/the-analytic-signal/","description":"Connecting the concept of an analytic signal to physics math methods.","keywords":["Math Methods","Analytic Signal","Hilbert Transform","DSP"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://ohmdsp.github.io/"},"publisher":{"@type":"Organization","name":"OhmDSP Site","url":"https://ohmdsp.github.io/"}}</script><link rel=icon href=../favicon/favicon.ico><link rel=icon type=image/png sizes=16x16 href=../favicon/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=../favicon/favicon-32x32.png><link rel=apple-touch-icon href=../favicon/apple-touch-icon.png><link rel=mask-icon href=../favicon/safari-pinned-tab.svg><link rel=manifest href=../site.webmanifest><meta name=theme-color content="/"><meta name=msapplication-TileColor content="/"><link rel=stylesheet type=text/css href=../lib/bootstrap/css/bootstrap.min.css><link rel=stylesheet type=text/css href=../lib/lightbox/css/lightbox.css><link rel=stylesheet type=text/css href=../font-awesome-4.7.0/css/font-awesome.min.css><link rel=stylesheet type=text/css href=../gfonts/font.css><link rel=stylesheet href=https://ohmdsp.github.io/main.min.6476295c5e00edc91a97355890741355600b1e94f632e3edc89e105b28b72792.css><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"],processHtmlClass:"mathjax",ignoreHtmlClass:"no-mathjax"}}</script><script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></head><body><nav class="navbar fixed-top navbar-expand-lg navbar-dark flex-column"><div class="container flex-row"><style>.navbar-brand{color:#fff!important;font-weight:700!important}</style><button class="navbar-toggler mr-3" type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse navbar-nav-scroll" id=navbarSupportedContent role=navigation aria-label="Main Navigation"><ul class="navbar-nav mr-5 flex-fill"><li class=nav-item><a class=nav-link href=../posts/>OhmDSP Blog</a></li><li class=nav-item><a class=nav-link href=../about/>About</a></li></ul><div class="collapse navbar-collapse navbar-nav-scroll" id=navbarSupportedContent role=navigation aria-label="Main Navigation"><div class="d-block d-lg-none"><ul class=navbar-nav><li class=nav-item><a class=nav-link href=../search title=Search><span class="d-block d-lg-none"><i class="fa fa-search" aria-hidden=true></i> Search</span><span class="d-none d-lg-block"><i class="fa fa-search" aria-hidden=true></i></span></a></li></ul></div><div class="d-none d-lg-flex align-items-center mr-2 flex-fill"><form class="form-inline ml-0" action=../search method=GET target=_self><a class="js-search-form-submit position-absolute" href=../search title=Search><i class="fa fa-search fa-fw text-muted pl-2" aria-hidden=true></i></a>
+<input id=search-by class="search-field form-control form-control-md mr-sm-1 mr-lg-2 w-100" style=padding-left:2rem maxlength=50 data-search-input type=search placeholder=Search aria-label=Search name=q>
+<input type=hidden name=_from value=nav></form></div></div></div></nav><div class="container main-content"><div class="row justify-content-center"><div class="col-md-11 col-lg-10 col-xl-9 article"><div class="article-body page-body"><h1 class=text-center id=post-title>The Analytic Signal<a class=headerlink href=../the-analytic-signal/ title="Permanent link"></a></h1><p class="text-center text-muted">Understand the analytic signal for both EE and Physics</p><picture><source media=(min-width:480px) srcset=../the-analytic-signal/hilbert_hu_82f6decb476d98ba.webp type=image/webp><source srcset=../the-analytic-signal/hilbert_hu_de80d350a1c4d33a.webp type=image/webp><img loading=lazy class="img-fluid mx-auto d-block rounded mb-4" src=../the-analytic-signal/hilbert.png height=768 width=1376 type=image/png alt=hilbert.png></picture><div class="row mb-1"><div class="col-2 col-md-1 p-0 ml-3 align-self-center"><a href><img src class="rounded-circle img-fluid w-100" sizes=10vw alt></a></div><div class="col pr-0 d-flex align-items-center"><p><span class=text-muted><span class=mr-2><a class=text-muted href target=_blank></a></span><br><span class="fa fa-clock-o"></span> <time>Aug 1, 2026</time>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/math-methods/>Math Methods</a>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/analytic-signal/>Analytic Signal</a>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/hilbert-transform/>Hilbert Transform</a>
+<span class="ml-2 fa fa-tags" aria-hidden=true></span>
+<a class="badge badge-light text-muted" href=../tags/dsp/>DSP</a></span></p></div></div><p>This post focuses on the analytic signal. The analytic-signal view is central
+in communications, radar, controls, and physics-based signal analysis
+because it separates amplitude and phase behavior in a mathematically clean
+way. The word &ldquo;analytic&rdquo; here is not a coincidence of terminology — it&rsquo;s the
+same complex-analysis concept from a math methods course, applied on the
+time axis instead of the spatial or complex-variable axis it&rsquo;s usually
+introduced with. This post builds the signal-processing machinery first,
+then closes the loop back to complex analysis to show why the name fits.</p><h2 id=what-analytic-means-briefly>What &ldquo;analytic&rdquo; means, briefly</h2><p>A function $\omega(z)$ is <strong>analytic</strong> in a region if it has a derivative at
+every point in that region, where the derivative</p>$$
+\frac{d\omega}{dz} = \lim_{\Delta z \to 0} \frac{\omega(z+\Delta z)-\omega(z)}{\Delta z}
+$$<p>must be independent of the direction $\Delta z$ approaches zero from. Writing
+$\omega(z) = u(x,y) + i v(x,y)$, this path-independence is equivalent to the
+<strong>Cauchy-Riemann equations</strong>:</p>$$
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}
+\qquad\qquad
+\frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y}
+$$<p>In other words: $u$ and $v$ aren&rsquo;t independent real functions once
+the analytic condition is imposed — each one determines the other (up to a constant),
+and they&rsquo;re called <strong>harmonic conjugates</strong>. Keep that pairing in mind; it&rsquo;s
+exactly what the Hilbert transform produces below.</p><h2 id=real-valued-signal-and-its-analytic-counterpart>Real-valued signal and its analytic counterpart</h2><p>Let $x(t)$ be a real-valued signal. We can form the analytic signal
+$s(t) = x(t) + j\hat{x}(t)$, where $\hat{x}(t)$ is the Hilbert transform of
+$x(t)$. Its Fourier transform $S(\omega)$ is zero for $\omega &lt; 0$ by
+construction.</p>$$
+x_a(t) = x(t) + j\hat{x}(t).
+$$<p>In the frequency domain,</p>$$
+X_a(f) =
+\begin{cases}
+2X(f), & f > 0, \\
+0, & f \le 0.
+\end{cases}
+$$<p>So the analytic signal keeps only positive-frequency content (one-sided
+spectrum). This one-sidedness is often how we define an analytic signal in signal processing courses and papers.</p><h2 id=hilbert-transform-pair>Hilbert transform pair</h2><p>The Hilbert transform is</p>$$
+\hat{x}(t) = \mathcal{H}\{x(t)\}
+= \frac{1}{\pi}\int_{-\infty}^{\infty}\frac{x(\tau)}{t-\tau}\,d\tau.
+$$<p>This integral has a problem: the denominator $t-\tau$ hits zero when
+$\tau = t$, so the integrand blows up right at the point we&rsquo;re integrating
+through. To make sense of the integral, we exclude a small symmetric
+window of width $2\epsilon$ around $\tau = t$ and shrink it to zero after
+integrating:</p>$$
+\hat{x}(t) = \frac{1}{\pi}\lim_{\epsilon \to 0^+}
+\left(\int_{-\infty}^{t-\epsilon} + \int_{t+\epsilon}^{\infty}\right)
+\frac{x(\tau)}{t-\tau}\,d\tau.
+$$<p>Because the window is symmetric, the parts of the integral that blow up on
+either side of $\tau=t$ cancel each other out, leaving a finite result. In
+practice this rarely needs to be handled explicitly — discrete
+implementations (FIR/IIR Hilbert filters, or the FFT-domain construction
+used later in this post) never evaluate the kernel exactly at $\tau=t$, so
+the singularity doesn&rsquo;t show up numerically in practice.</p><p>The frequency-domain form follows directly, since the integral above is a
+convolution and convolution becomes multiplication in frequency:</p>$$
+\hat{X}(f) = -j\,\operatorname{sgn}(f)\,X(f),
+$$<p>with</p>$$
+\operatorname{sgn}(f) =
+\begin{cases}
+1, & f > 0, \\
+0, & f = 0, \\
+-1, & f < 0.
+\end{cases}
+$$<p>So the Hilbert transform is just a filter, $H(f) = -j,\operatorname{sgn}(f)$,
+that leaves magnitude alone and shifts phase by $-90°$ at positive
+frequencies and $+90°$ at negative frequencies — nothing more exotic than
+that.</p>$$
+X_a(f) = X(f) + j\hat{X}(f)
+= X(f) + \operatorname{sgn}(f)X(f).
+$$<p>Here&rsquo;s why that combination produces a one-sided spectrum: adding
+$j\hat{X}(f)$ to $X(f)$ turns the $-90°$ phase shift on the positive side
+into constructive addition, doubling those components
+($X(f)+X(f)=2X(f)$ for $f>0$), while the $+90°$ shift on the negative side
+produces destructive cancellation, zeroing them out entirely
+($X(f)-X(f)=0$ for $f&lt;0$). At $f=0$, $\operatorname{sgn}(0)=0$, so the
+component is left unchanged. The result is exactly the one-sided spectrum
+introduced earlier — the original positive-frequency content scaled by 2,
+and nothing at negative frequencies.</p><h2 id=magnitude-and-phase-representation>Magnitude and phase representation</h2><p>Let&rsquo;s write the analytic signal in polar form:</p>$$
+x_a(t) = A(t)e^{j\phi(t)},
+$$<p>where</p>$$
+A(t) = |x_a(t)| = \sqrt{x^2(t) + \hat{x}^2(t)},
+$$<p>and</p>$$
+\phi(t) = \arg\{x_a(t)\}.
+$$<p>The original real signal is recovered by taking the real part:</p>$$
+x(t) = \Re\{x_a(t)\} = A(t)\cos\phi(t).
+$$<h2 id=instantaneous-frequency>Instantaneous frequency</h2><p>When phase is unwrapped and differentiable, instantaneous frequency is</p>$$
+f_i(t) = \frac{1}{2\pi}\frac{d\phi(t)}{dt}.
+$$<p>This is useful for nonstationary and narrowband signals where local
+frequency content evolves over time.</p><h2 id=connection-to-complex-envelope>Connection to complex envelope</h2><p>For a bandpass signal centered near $f_c$, define</p>$$
+x_a(t) = \tilde{x}(t)e^{j2\pi f_c t},
+$$<p>where $\tilde{x}(t)$ is the complex envelope (complex baseband). Therefore,</p>$$
+\tilde{x}(t) = x_a(t)e^{-j2\pi f_c t}.
+$$<p>If we write</p>$$
+\tilde{x}(t)=x_I(t)+jx_Q(t),
+$$<p>then the real passband signal can be written as</p>$$
+x(t)=x_I(t)\cos(2\pi f_c t)-x_Q(t)\sin(2\pi f_c t).
+$$<p>This decomposition is the standard I/Q representation used throughout
+communication and radar systems.</p><h2 id=short-derivation-for-a-cosine>Short derivation for a cosine</h2><p>Let</p>$$
+x(t)=\cos(2\pi f_0 t).
+$$<p>Its Hilbert transform is</p>$$
+\hat{x}(t)=\sin(2\pi f_0 t).
+$$<p>Therefore,</p>$$
+x_a(t)=\cos(2\pi f_0 t)+j\sin(2\pi f_0 t)=e^{j2\pi f_0 t},
+$$<p>which has only a positive-frequency spectral line.</p><p>This example is small enough to check the analytic condition directly. Extend $t$ to a
+complex variable $z = t + j\tau$ and evaluate the same formula there:</p>$$
+x_a(z) = e^{j2\pi f_0 z} = e^{j2\pi f_0 t}\,e^{-2\pi f_0 \tau}.
+$$<p>This is entire (analytic everywhere) in $z$, and for $\tau > 0$ it decays
+rather than blows up — well-behaved in the upper half of the complex $t$-plane.
+That decay for $\tau>0$ is not a coincidence of this particular example; it&rsquo;s
+forced by $f_0 > 0$, i.e., by the one-sided spectrum. The general case below
+shows why.</p><h2 id=why-the-analytic-signal-is-actually-analytic>Why the analytic signal is actually analytic</h2><p>Go back to the single-tone case worked out above: $x_a(t) = e^{j2\pi f_0 t}$
+for a positive frequency $f_0$. Extending $t$ into the complex plane as
+$z = t + j\tau$ gave</p>$$
+x_a(z) = e^{j2\pi f_0 t}\,e^{-2\pi f_0 \tau},
+$$<p>an oscillation at $f_0$ multiplied by a decaying exponential in $\tau$. That
+decay only happens because $f_0 > 0$. If $f_0$ were negative, the same
+substitution would give a term that <em>grows</em> without bound as $\tau$
+increases.</p><p>A general analytic signal is a sum of tones like this one, weighted by
+$X_a(f)$, but restricted entirely to $f>0$. Tilt time into the complex
+plane the same way, and every one of those tones picks up a decaying
+factor $e^{-2\pi f\tau}$ for $\tau>0$ — none of them grow, because none of
+them have negative frequency. Stack up infinitely many decaying pieces and
+the sum stays well-behaved: it converges, and it stays smooth
+(differentiable) as $z$ moves around in that region. That&rsquo;s the entire
+content of &ldquo;analytic&rdquo; from earlier in this post, arrived at using a
+physical explanation that nothing in the signal has an ingredient that blows up in
+that direction.</p><p>If even one negative-frequency component were present, its exponential
+would grow instead of decay, and the sum would diverge and the function
+would fail to be analytic there. So restricting to $f>0$ is precisely the condition that keeps the complex-time extension finite. $x_a(t)$ is the boundary value of that
+extension as $\tau \to 0^+$ — the signal you actually measure is the edge
+of a better-behaved function living just off the real time axis.</p><h2 id=this-should-look-familiar>This should look familiar</h2><p>It&rsquo;s the same logic as the region of convergence (ROC) for a one-sided signal&rsquo;s Laplace or Z-transform: a causal
+signal ($x(t)=0$ for $t&lt;0$, one-sided in <em>time</em>) has a transform that
+converges, and is therefore analytic, only in a half-plane of the
+complex frequency variable $s$ (or outside some radius in $z$). Here the
+one-sidedness is in <em>frequency</em> instead of time, so the roles swap: a
+one-sided spectrum forces the analytic condition in a half-plane of complex <em>time</em>.
+Same convergence mechanism, opposite domain.</p><h2 id=tying-x-and-hatx-together>Tying $x$ and $\hat{x}$ together</h2><p>On the real axis ($\tau=0$),
+$x_a(t) = x(t) + j\hat{x}(t)$ - the in-phase/quadrature signal. But
+because $x_a(z)$ is analytic, its real and imaginary parts aren&rsquo;t free to
+be anything: the Cauchy-Riemann equations lock them into a specific pair
+(harmonic conjugates), and on the real axis that constraint is exactly the
+Hilbert transform relation between $x$ and $\hat{x}$. The Hilbert transform is the transform that falls out once you insist the spectrum is one-sided.</p><h2 id=and-the-loop-closes-with-causality>And the loop closes with causality</h2><p>Run the identical argument with
+time and frequency swapped: a causal impulse response $h(t)$ (zero for
+$t&lt;0$) has a Fourier transform $H(\omega)$ that is analytic in the upper
+half of the complex $\omega$-plane, for exactly the same convergence
+reason. That analytic condition forces the real and imaginary parts of
+$H(\omega)$ into a Hilbert-transform pair of their own: the Kramers-Kronig relations. The
+analytic signal is the mirror image of a causal system and is one-sided in
+frequency instead of time, analytic in time instead of frequency.</p></div></div></div></div><footer class=footer><div class=container><p class="small text-center text-muted w-75 mx-auto">&copy 2012–2026 OhmDSP Site&nbsp;⋅
+<a href=../contact>Contact</a>&nbsp;</div></footer><script type=text/javascript src=../lib/jquery/jquery.js></script><script type=text/javascript src=../lib/popper/popper.js></script><script type=text/javascript src=../lib/bootstrap/js/bootstrap.min.js></script><script type=text/javascript src=../lib/lightbox/js/lightbox.js></script><script>var lightboxDescription,lightboxVideo,lightboxInlineIframe,lightbox=GLightbox();lightbox.on("open",e=>{console.log("lightbox opened")}),lightboxDescription=GLightbox({selector:".glightbox2"}),lightboxVideo=GLightbox({selector:".glightbox3"}),lightboxVideo.on("slide_changed",({prev:e,current:t})=>{console.log("Prev slide",e),console.log("Current slide",t);const{slideIndex:s,slideNode:o,slideConfig:i,player:n}=t;n&&(n.ready||n.on("ready",e=>{}),n.on("play",e=>{console.log("Started play")}),n.on("volumechange",e=>{console.log("Volume change")}),n.on("ended",e=>{console.log("Video ended")}))}),lightboxInlineIframe=GLightbox({selector:".glightbox4"})</script><script type=text/javascript src=../lib/back-to-top/vanilla-back-to-top.min.js></script><script>addBackToTop({diameter:56,backgroundColor:"rgb(255, 82, 82)",textColor:"#fff"})</script></body></html>

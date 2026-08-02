@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Office photo placeholder</title>
+  <desc id="desc">Placeholder image for an office or workspace scene.</desc>
+  <rect width="1200" height="700" fill="#f2efe8"/>
+  <rect x="75" y="75" width="1050" height="550" rx="26" fill="#ddd5c7" stroke="#5b6b5f" stroke-width="6"/>
+  <rect x="160" y="170" width="300" height="190" rx="14" fill="#8ea58c"/>
+  <rect x="520" y="170" width="520" height="280" rx="14" fill="#c3b79f"/>
+  <rect x="180" y="430" width="260" height="30" rx="8" fill="#5b6b5f"/>
+  <rect x="150" y="460" width="320" height="24" rx="8" fill="#5b6b5f"/>
+  <rect x="620" y="490" width="320" height="36" rx="10" fill="#8ea58c"/>
+  <text x="600" y="580" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#415146">Replace with an office or workspace photo</text>
+</svg>
